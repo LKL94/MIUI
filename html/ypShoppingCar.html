@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My有品购物车</title>
+  <link rel="shortcut icon" href="youpin_favicon.ico" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/ypShoppingcar.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/ypShoppingCar.js"></script>
+</head>
+
+<body>
+  <!-- 顶部header部分制作 -->
+  <header class="lt_hd">
+    <div class="lt_w">
+      <ul>
+        <li class="mycount_box">
+          <a href="javascript:;" class="mycount">Liutong</a>
+          <ul class="mycount_item">
+            <li>我的订单</li>
+            <li>退款/售后</li>
+            <li>我的资产</li>
+            <li>我的收藏</li>
+            <li>地址管理</li>
+            <li>退出登录</li>
+          </ul>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="javascript:;">帮助中心</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="javascript:;">下载 APP</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="javascript:;">直播</a>
+        </li>
+        <li>|</li>
+        <li class="protocol">
+          <a href="javascript:;">资质证照/协议规则</a>
+          <ul class="protocol_list">
+            <li><a href="javascript:;">资质证照</a></li>
+            <li><a href="javascript:;">协议规则</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </header>
+  <!-- 导航栏头部 lt_nav_hd部分-->
+  <div class="lt_nav_hd">
+    <div class="youpin_logo">
+      <img src="../images/youpin/youpinlogo.png" alt="">
+    </div>
+    <div class="lt_tab_item">
+      <a href="javascript:;">限时抢购</a>
+      <a href="javascript:;">企业采购</a>
+    </div>
+    <div class="lt_search">
+      <div class="ly_yp_search">
+        <i></i>
+        <input type="search" placeholder="搜一搜">
+      </div>
+      <a class="shopping-car-icon"><i class="good-num">0</i></a>
+    </div>
+  </div>
+  <!-- 购物车区域 -->
+  <div class="c-container">
+    <div class="lt_w ">
+      <div class="cart-filter-bar">
+        <em>首页 &gt; <span>购物车</span></em>
+      </div>
+      <!-- 购物车主要核心区域 -->
+      <div class="cart-warp">
+        <!-- 头部全选模块 -->
+        <div class="cart-thead">
+          <div class="t-checkbox">
+            <input type="checkbox" class="checkall"> 全选
+          </div>
+          <div class="t-goods">商品信息</div>
+          <div class="t-price">单价</div>
+          <div class="t-num">数量</div>
+          <div class="t-sum">金额</div>
+          <div class="t-action">操作</div>
+        </div>
+        <!-- 商品详细模块 -->
+        <div class="cart-item-list">
+          <div class="cart-item check-cart-item">
+            <div class="p-checkbox">
+              <input type="checkbox" name="" id="" class="j-checkbox">
+            </div>
+            <div class="p-goods">
+              <div class="p-img">
+                <img src="../images/youpin/car1_yp.webp" alt="">
+              </div>
+              <div class="p-msg">
+                愉悦之家 全棉色织抗菌件套 牛仔蓝 1.2米床</div>
+            </div>
+            <div class="p-price">&yen; 1000.00</div>
+            <div class="p-num">
+              <div class="quantity-form">
+                <a href="javascript:;" class="decrement">-</a>
+                <input type="text" class="itxt" value="1">
+                <a href="javascript:;" class="increment">+</a>
+              </div>
+            </div>
+            <div class="p-sum">&yen; 1000.00</div>
+            <div class="p-action"><a href="javascript:;">×</a></div>
+          </div>
+          <div class="cart-item check-cart-item">
+            <div class="p-checkbox">
+              <input type="checkbox" checked name="" id="" class="j-checkbox">
+            </div>
+            <div class="p-goods">
+              <div class="p-img">
+                <img src="../images/youpin/car2_yp.jpg" alt="">
+              </div>
+              <div class="p-msg">
+                干豆直打，冷热两用免过滤
+              </div>
+            </div>
+            <div class="p-price">&yen; 299.00</div>
+            <div class="p-num">
+              <div class="quantity-form">
+                <a href="javascript:;" class="decrement">-</a>
+                <input type="text" class="itxt" value="1">
+                <a href="javascript:;" class="increment">+</a>
+              </div>
+            </div>
+            <div class="p-sum">&yen; 299.00</div>
+            <div class="p-action"><a href="javascript:;">×</a></div>
+          </div>
+        </div>
+
+        <!-- 结算模块 -->
+        <div class="cart-floatbar">
+          <div class="select-all">
+            <input type="checkbox" name="" id="" class="checkall">全选
+          </div>
+          <div class="amount-sum">已选<em>1</em>件商品</div>
+          <div class="toolbar-right">
+            <div class="price-sum">合计: <em>&yen; 0</em></div>
+            <div class="total-price">总额：<em class="total-number">&yen; 0</em>，立减<em class="cut-number">&yen; 0</em>
+            </div>
+          </div>
+          <div class="btn-area" id="btnArea">去结算</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- 推荐商品模块 -->
+  <div class="shopping_advice lt_w"> 购物车推荐商品</div>
+  <ul class="yp_skill_bd lt_w">
+    <li>
+      <i class="add-sucess">添加成功</i>
+      <img src="../images/youpin/yp_skill1.jpg" alt="">
+      <p class="pro_name">怡泰桂花酸梅汤</p>
+      <p class="pro_price"><span>&yen;26</span> <del>&yen;69</del></p>
+      <a href="javascript:;" class="add-car">添加至购物车</a>
+    </li>
+    <li>
+      <i class="add-sucess">添加成功</i>
+      <img src="../images/youpin/yp_skill2.jpg" alt="">
+      <p class="pro_name">云米烘洗一体机</p>
+      <p class="pro_price"><span>&yen;1998</span> <del>&yen;2999</del></p>
+      <a href="javascript:;" class="add-car">添加至购物车</a>
+    </li>
+    <li>
+      <i class="add-sucess">添加成功</i>
+      <img src="../images/youpin/yp_skill3.jpg" alt="">
+      <p class="pro_name">小闲洗衣凝珠</p>
+      <p class="pro_price"><span>&yen;39.9</span> <del>&yen;79</del></p>
+      <a href="javascript:;" class="add-car">添加至购物车</a>
+    </li>
+    <li>
+      <i class="add-sucess">添加成功</i>
+      <img src="../images/youpin/yp_skill4.jpg" alt="">
+      <p class="pro_name">70迈智能后视镜</p>
+      <p class="pro_price"><span>&yen;649.9</span> <del>&yen;1299</del></p>
+      <a href="javascript:;" class="add-car">添加至购物车</a>
+    </li>
+  </ul>
+
+  <!-- 底部版权模块 -->
+  <footer class="yp_footer">
+    <div class="yp_footer_content lt_w ">
+      <img src="../images/youpin/footer_logo.png" alt="" class="yp_footer_logo">
+      <div class="yp_copyright">
+        <p>©xiaomiyoupin.com 苏B2-20180351 苏ICP备18025642号-1 logo苏公网安备 32010502010244号</p>
+        <p>企业名称：有品信息科技有限公司 关于我们 入驻有品 知识产权侵权投诉</p>
+        <p>小米有品平台运营主体变更公告</p>
+        <p>南京市建邺区白龙江东街8号3栋9层</p>
+      </div>
+      <img src="../images/youpin/yp_footer.copyright.png" alt="" class=" footer_copyright_pic">
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1033 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 980px;
+    margin: 0 auto;
+}
+
+body {
+    overflow: scroll;
+    background-color: #EEEEEE;
+}
+
+.box {
+    height: 768px;
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 505px; */
+}
+
+.wudi {
+    padding-top: 40px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 768px;
+    background: url(../images/lmj-child.png) no-repeat center center;
+    /* 背景缩放 */
+    background-size: cover;
+    z-index: 2;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #FEFEFE;
+    /* display: none; */
+}
+
+.menu {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background-color: #FEFEFE;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.first {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transform-origin: center center;
+    transition: all 0.3s;
+}
+
+.second {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transform-origin: center center;
+    transition: all 0.3s;
+}
+
+.third {
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+}
+
+.box1 {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.xuanzhuan1 {
+    top: 18px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-45deg);
+}
+
+.xuanzhuan {
+    top: 18px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(45deg);
+}
+
+/* 视频播放 */
+
+.main {
+    overflow: hidden;
+    width: 980px;
+    height: 450px;
+    margin: 280px auto;
+}
+
+.title {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.easy {
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+
+.play-btn {
+    text-align: center;
+    width: 84px;
+    height: 84px;
+    margin: 50px auto 0;
+    cursor: pointer;
+}
+
+.play-btn img {
+    width: 84px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.videoShow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -47%;
+    width: 94%;
+    height: 768px;
+    z-index: 999;
+}
+
+.close-btn {
+    position: fixed;
+    top: 500px;
+    left: 50%;
+    width: 84px;
+    height: 84px;
+    line-height: 84px;
+    border-radius: 42px;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #ccc;
+    color: #fff;
+    z-index: 999;
+    text-align: center;
+    cursor: pointer;
+}
+
+.videoShow video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.main .ad {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.xiaomiShare {
+    position: relative;
+    margin-top: 100px;
+}
+
+.logo {
+    width: 980px;
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+.xiaomiShare img {
+    width: 300px;
+}
+
+.image-box {
+    width: 980px;
+    position: relative;
+    height: 560px;
+    background: url(../images/lmj-touch.png) no-repeat center center;
+    margin-bottom: 15px;
+}
+
+.image-box .content {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 320px;
+    height: 160px;
+    display: block;
+}
+
+.content .title1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.content p {
+    font-size: 20px;
+    color: #666;
+}
+
+.image-box2 {
+    position: relative;
+    width: 980px;
+    height: 560px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.image-box2 .pic {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 470px;
+    height: 420px;
+    background: url(../images/lmj-device1.png) no-repeat;
+}
+
+.image-box2 .content2 {
+    position: absolute;
+    top: 230px;
+    right: 100px;
+    width: 320px;
+    height: 160px;
+    display: none;
+}
+
+.content2 .title2 {
+    font-size: 35px;
+    font-weight: 400;
+    /* text-align: center; */
+    color: black;
+    margin-bottom: 50px;
+}
+
+.content2 p {
+    font-size: 20px;
+    color: #666;
+}
+
+.image-box3 {
+    position: relative;
+    width: 980px;
+    height: 560px;
+    background: url(../images/lmj-wall.png) no-repeat;
+    margin-bottom: 20px;
+}
+
+.image-box3 .content3 {
+    position: absolute;
+    top: 129px;
+    left: 250px;
+    width: 480px;
+    height: 302px;
+    display: none;
+}
+
+.content3 .title3 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.content3 p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content3 .play-btn {
+    margin-top: 50px;
+}
+
+.content3 img {
+    width: 84px;
+    height: 84px;
+}
+
+.image-box4 {
+    position: relative;
+    width: 980px;
+    height: 560px;
+    background-color: #fff;
+}
+
+.image-box4 .pic {
+    position: relative;
+    left: 0px;
+    top: 24px;
+    width: 467px;
+    height: 511px;
+    background: url(../images/lmj-left-pc.png) no-repeat;
+}
+
+.image-box4 .content4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 437px;
+    height: 560px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+}
+
+.content4 .title4 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.content4 div {
+    margin-bottom: 10px;
+}
+
+.content4 img {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.content4 p {
+    font-size: 18px;
+}
+
+.more {
+    position: relative;
+    width: 980px;
+    height: 184px;
+}
+
+.more .content5 {
+    width: 400px;
+    height: 184px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.more .btn-more {
+    display: block;
+    width: 72px;
+    height: 72px;
+    line-height: 65px;
+    font-size: 70px;
+    color: #4B97FE;
+    text-align: center;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, .1);
+    border-radius: 35px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: auto;
+    cursor: pointer;
+}
+
+.content5 p {
+    color: #3A8DFD;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 第三部分 */
+
+.xiaomiSmart {
+    position: relative;
+    margin-top: 100px;
+}
+
+.top-content {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.top-content p {
+    color: #3A3EED;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.top-content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+
+.xiaomiSmart .image1-box {
+    position: relative;
+    width: 980px;
+    height: 560px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.image1-box .pic {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 271px;
+    height: 495px;
+    background: url(../images/lmj-phone1.png) no-repeat;
+}
+
+.image1-box .content {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 400px;
+    height: 160px;
+}
+
+.image1-box .title1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.image1-box p {
+    font-size: 18px;
+}
+
+.xiaomiSmart .image-box2 .content2 {
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    width: 400px;
+    height: 420px;
+}
+
+.xiaomiSmart .image-box2 .pic {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    width: 400px;
+    height: 495px;
+    background: url(../images/lmj-phone2.png) no-repeat;
+}
+
+.xiaomiSmart .content2 p {
+    font-size: 16px;
+}
+
+.content2 .join {
+    width: 121px;
+    height: 54px;
+    margin-top: 20px;
+}
+
+.xiaomiSmart .content2 .explain {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.image1-box .picture {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 346px;
+    height: 459px;
+    background: url(../images/lmj-phone-pc3.png) no-repeat;
+}
+
+.xiaomiSmart .image-box4 {
+    position: relative;
+    width: 980px;
+    height: 560px;
+}
+
+.xiaomiSmart .image-box4 .pic {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    width: 467px;
+    height: 511px;
+    background: url(../images/lmj-phone-pc4.png) no-repeat;
+}
+
+/* 第四部分 人性智能 */
+
+.four {
+    width: 644px;
+    margin: 0 auto;
+}
+
+.caption1 h1 {
+    color: #3A54ED;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+.caption1 p {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.caption2 {
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+}
+
+.caption2 h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.caption2 p {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.img-card {
+    width: 650px;
+    height: 565px;
+    /* background-color: #fff; */
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.img-card img {
+    display: block;
+    width: 644px;
+    height: 560px;
+    margin: 0 auto;
+}
+
+.four .more {
+    position: relative;
+    width: 644px;
+    height: 184px;
+    margin-top: 100px;
+}
+
+/* 第五部分   儿童萌新报道 */
+
+.five {
+    position: relative;
+    /* background-color: #fff; */
+    margin-top: 50px;
+}
+
+.sound, .sound2 {
+    position: relative;
+    width: 980px;
+    height: 560px;
+    background: linear-gradient(135deg, #9f56cb, #f988e7);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.sound2 {
+    margin-top: 15px;
+    background: url(../images/lmj-child1.png) no-repeat;
+    margin-bottom: 50px;
+}
+
+.five .content {
+    position: absolute;
+    width: 478px;
+    height: 356px;
+}
+
+.five h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.five p {
+    height: 120px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.btn-sound {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    width: 301px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 28px;
+    box-sizing: border-box;
+}
+
+.btn-sound .btn {
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-left-color: #C46BD7;
+    cursor: pointer;
+}
+
+audio {
+    display: none;
+}
+
+.btn-sound span {
+    color: #C46BD7;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.five .content5 p {
+    color: #3A8DFE;
+}
+
+/* 第六部分 智选设备 */
+
+.last1 {
+    position: relative;
+    width: 793px;
+    height: 141px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.last1 .caption1 {
+    width: 793px;
+    height: 141px;
+    margin: 0 auto;
+}
+
+.caption1 span {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.caption1 p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 轮播图插件开始 */
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* 轮播图插件结束 */
+
+.last2 {
+    position: relative;
+    width: 793px;
+    height: 183px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+}
+
+.last2 .bigBox {
+    width: 529px;
+    height: 183px;
+}
+
+.last2 .swiper-container {
+    overflow: hidden;
+    width: 529px;
+    height: 183px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.last2 .swiper-wrapper {
+    width: 2000px;
+    height: 161px;
+    /* background-color: coral; */
+    margin-right: 25px;
+}
+
+.imageBox {
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-right: 22px;
+    /* background-color: #fff; */
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.imageBox:nth-child(3n) {
+    margin-right: 0;
+}
+
+.imageBox .img {
+    width: 98px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.imageBox span {
+    display: block;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    margin: 10px auto;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.imageBox a {
+    display: block;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+/* 第七部分  声明与说明 */
+
+.bottom {
+    width: 100%;
+    height: 950px;
+    background-color: #E6E6E6;
+}
+
+.explain1 {
+    position: relative;
+    width: 752px;
+    height: 900px;
+    margin: 10px auto;
+    display: none;
+}
+
+.explain1 span {
+    display: block;
+    font-size: 45px;
+    color: black;
+    font-weight: 500px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.explain1 .text-content {
+    width: 752px;
+    margin: 0 auto;
+}
+
+.explain1 .text-content p {
+    font-size: 12px;
+    color: #B3B3B3;
+    margin-bottom: 5px;
+}
+
+.text-content p a {
+    color: #3A8DFE;
+    font-size: 13px;
+}
+
+/* 插件引入 */
+
+/* 引入视频 */
+
+#modelView {
+    background-color: #DDDDDD;
+    z-index: 0;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.playvideo {
+    padding-top: auto;
+    z-index: 9999;
+    position: relative;
+    width: 100%;
+    height: 768px;
+}
+
+.zy_media {
+    z-index: 999999999
+}
+
+/* //动态生成小圆圈 */
+
+#ol-list {
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    padding: 3px 5px;
+    height: 20px;
+    border-radius: 5px;
+    background: #000;
+}
+
+#ol-list li {
+    cursor: pointer;
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 2px 5px;
+}
+
+#ol-list .active {
+    background: red;
+}
+
+/* 发现更多小米妙享功能 */
+
+.morefunction {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    background-color: #E6E6E6;
+    z-index: 999;
+}
+
+.morefunction h1 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.morefunction p {
+    color: #686868;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.morefunction .phone {
+    width: 479px;
+    height: 469px;
+    margin: 50px auto;
+}
+
+.phone img {
+    width: 100%;
+}
+
+.morefunction .phone2 {
+    width: 910px;
+    height: 718px;
+    margin: 50px auto;
+}
+
+.phone2 img {
+    width: 910px;
+    height: 518px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* 头部电梯导航 */
+
+.page-container {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: none;
+}
+
+.page-container ul {
+    /* position: relative; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-container li {
+    cursor: pointer;
+    position: relative;
+    flex: 2.5;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* padding-right: 40px; */
+}
+
+.page-container div {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.show {
+    display: block!important;
+}
+
+/* .page-container:hover div {
+    display: block;
+} */
+
+.page-container .bgone {
+    background: url(../images/lmj-p1Child.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-container .bgtwo {
+    background: url(../images/lmj-secondpic.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-container .bgthree {
+    background: url(../images/bg3.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-container .bgfour {
+    background: url(../images/bg4.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-container li span {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 70px;
+    color: #1b1b1b;
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.page-container li:nth-child(1) span:nth-child(1) {
+    color: #fff;
+}

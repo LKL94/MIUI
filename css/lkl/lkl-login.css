@@ -1,0 +1,357 @@
+/**
+ * @format
+ */
+body {
+	color: #666;
+	font-size: 14px;
+	font-family: Helvetica, arial, 'MI Lan Pro', 'Hiragino Sans GB', 'PingFang SC',
+		'Microsoft YaHei', '微軟正黑體', '儷黑 Pro', sans-serif;
+}
+
+/* 头部区域 */
+.header {
+	margin: 0 auto;
+	width: 1130px;
+	height: 98px;
+}
+.header h1 {
+	height: 100%;
+}
+
+.header .title {
+	display: block;
+	width: 200px;
+	height: 100%;
+	font-size: 0;
+	text-indent: -9999em;
+	background: url(../../images/lkl/img/login/mistore_logo.png) no-repeat left;
+}
+
+/* 登录大背景图 */
+.main {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	height: 588px;
+	background: url(../../images/lkl/img/login/bg-img.jpg) no-repeat center;
+}
+
+/* 放一个整体大盒子 */
+
+.login_box {
+	overflow: hidden;
+	position: absolute;
+	right: 106px;
+	width: 410px;
+	height: 555px;
+	margin-top: 33px;
+	text-align: center;
+	background-color: #fff;
+}
+/* 放一个第一行内容的盒子 */
+
+.login {
+	margin-top: 35px;
+}
+
+.login a {
+	text-decoration: none;
+	font-size: 24px;
+	display: inline-block;
+	padding: 0 44px;
+}
+
+/* 第一行分成两块，分别设置css属性 */
+.login1 {
+	border-right: 2px solid #e0e0e0;
+}
+
+.login2 {
+	color: #837066;
+}
+
+/* tab栏切换，当前选项的样式 */
+.current {
+	color: #ff6700;
+}
+
+.login a:hover {
+	color: #f56600;
+}
+
+/* 用户名登录模块的样式 */
+/* 下面三个都是输入框，一起设置样式 */
+.id_login {
+	margin-top: 25px;
+}
+
+/* 点击用户名登录和手机号登录时切换的显示模块属性 */
+.one,
+.two {
+	height: 121px;
+}
+
+.two {
+	display: none;
+}
+
+/* 用户名登录显示的样式 */
+.id_login .one input,
+.id_login .btn {
+	display: block;
+	width: 333px;
+	height: 48px;
+	margin: 25px 31px 16px;
+	padding-left: 15px;
+	border: 1px solid #e0e0e0;
+}
+
+.trip {
+	display: none;
+	padding-left: 32px;
+	text-align: left;
+	color: red;
+}
+
+.trip i {
+	user-select: none;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #ff6700;
+}
+
+/* 手机号登录显示的样式 */
+.phone_number,
+.security_code {
+	position: relative;
+	width: 333px;
+	height: 48px;
+	margin: 25px 31px 16px;
+	border: 1px solid #e0e0e0;
+}
+
+.phone_number span,
+.security_code span {
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	line-height: 48px;
+	border-right: 1px solid #e0e0e0;
+}
+
+.phone_number input,
+.security_code input {
+	float: left;
+	width: 80%;
+	padding-left: 15px;
+	margin-top: 14px;
+	border: 0;
+}
+
+.security_code input {
+	width: 70%;
+}
+
+.security_code span {
+	float: right;
+	width: 30%;
+	border-left: 1px solid #e0e0e0;
+}
+
+.security_code span a {
+	color: #003ab5;
+}
+
+/* 提交按钮不同，单独设置样式 */
+.id_login .btn {
+	cursor: pointer;
+	width: 350px;
+	height: 50px;
+	background-color: #ff6700;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 300;
+}
+/* 底部总体样式 */
+
+.regsiter {
+	text-align: center;
+}
+/* 底部有三块，分别设置css样式 */
+
+.regsiter a {
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.regsiter1 a {
+	color: #f56600;
+}
+
+.regsiter2 {
+	margin-top: 30px;
+}
+
+.regsiter2 a {
+	color: #999999;
+}
+
+.regsiter2 a:hover {
+	color: #ff6700;
+}
+
+.other_way {
+	position: relative;
+	margin: 96px auto 0 auto;
+	width: 333px;
+	height: 60px;
+	border-top: 1px solid #ddd;
+}
+
+.other_ways {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+	color: #ccc;
+	background-color: #fff;
+}
+
+.way_icon {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.way_icon a {
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	margin: 0 17px;
+	border-radius: 50%;
+	background-color: #0288d1;
+}
+
+.way_icon a i {
+	display: block;
+	margin: 4px auto 0;
+	width: 18px;
+	height: 18px;
+	background: url(../../images/lkl/img/login/icons_type.png) no-repeat -19px 0;
+}
+
+.way_icon a:nth-child(2) {
+	background-color: #d32f2f;
+}
+
+.way_icon a:nth-child(2) i {
+	background-position-x: -38px;
+}
+
+.way_icon a:nth-child(3) {
+	background-color: #0ae;
+}
+
+.way_icon a:nth-child(3) i {
+	background-position-x: -57px;
+	width: 25px;
+	margin-top: 6px;
+	margin-left: 4px;
+}
+.way_icon a:nth-child(4) {
+	background-color: #00d20d;
+}
+
+.way_icon a:nth-child(4) i {
+	background-position-x: -83px;
+	width: 24px;
+	margin-top: 6px;
+}
+
+/* 扫码登录模块 */
+.QR_code {
+	display: none;
+	margin-top: 90px;
+}
+
+.QR {
+	display: block;
+	margin: 0 auto;
+}
+
+.app {
+	position: relative;
+	margin: 60px auto;
+	width: 300px;
+	height: 70px;
+	border-top: 1px solid #ddd;
+}
+
+.app_title {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+}
+.app_icon {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	width: 240px;
+	transform: translateX(-50%);
+}
+
+.app_icon a {
+	float: left;
+	overflow: hidden;
+	display: block;
+	width: 48px;
+	height: 55px;
+	margin: 0 16px;
+	color: #888;
+	font-size: 12px;
+	text-align: center;
+}
+
+.app_icon a i {
+	display: block;
+	margin: 3px auto;
+	width: 32px;
+	height: 32px;
+	background: url(../../images/lkl/img/login/icon_apps.png) no-repeat -32px 0;
+}
+
+.app_icon a:nth-child(2) i {
+	background-position: -32px -32px;
+}
+
+.app_icon a:nth-child(3) i {
+	background-position: 0 -32px;
+}
+
+.message {
+	margin-top: -30px;
+	text-align: center;
+}
+
+.message span {
+	color: #ff6700;
+}
+
+/* 语言选项和法律备案 */
+.footer {
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.footer p {
+	margin-top: 10px;
+}

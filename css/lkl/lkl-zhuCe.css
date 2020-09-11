@@ -1,0 +1,118 @@
+/** @format */
+
+body {
+	background: #f9f9f9;
+	color: #666;
+	font-size: 14px;
+	font-family: Helvetica, arial, 'MI Lan Pro', 'Hiragino Sans GB', 'PingFang SC',
+		'Microsoft YaHei', '微軟正黑體', '儷黑 Pro', sans-serif;
+}
+
+/* 内容区域大盒子 */
+.container {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 854px;
+	background-color: #fff;
+}
+
+/* 小米logo */
+.logo {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+.logo a {
+	display: inline-block;
+	cursor: default;
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+	background: #ff6700 url(../../images/lkl/img/index/mi-logo.png) no-repeat
+		center;
+}
+
+/* 页面标题 */
+.title {
+	height: 100px;
+	padding: 28px 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	color: #333;
+}
+
+/* form表单域 */
+
+form {
+	padding: 20px 260px;
+}
+
+.box {
+	width: 100%;
+}
+
+.nation,
+.number,
+.submit {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	outline: none;
+	height: 40px;
+	padding: 0 15px;
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #eee;
+}
+
+.cell_phone_number {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.trip {
+	display: none;
+	color: red;
+}
+
+.trip i {
+	user-select: none;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #ff6700;
+}
+
+.submit {
+	cursor: pointer;
+	background-color: #ff6700;
+	color: #fff;
+}
+
+.submit:hover {
+	background-color: #ff936a;
+}
+
+.agree {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+
+/* 语言选项和法律备案 */
+.footer {
+	padding: 25px 0;
+	text-align: center;
+}
+
+.footer p {
+	margin-top: 10px;
+}

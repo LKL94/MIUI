@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米商城-登录</title>
+  <!-- 引入favicon图标 -->
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <!-- 引入基础样式表 -->
+  <link rel="stylesheet" href="../css/lkl/base.css">
+  <!-- 引入页面样式表 -->
+  <link rel="stylesheet" href="../css/lkl/lkl-login.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>
+      <a href="../index.html" target="_blank" class="title" title="小米商城">小米网
+      </a>
+    </h1>
+  </header>
+
+  <main class="main">
+
+    <!-- 登录模块 -->
+    <div class="login_box">
+
+      <!-- 两种登录方式，tab栏切换点击处 -->
+      <div class="login">
+        <a href="javascript:;" class="login1 current">账号登录</a>
+        <a href="javascript:;" class="login2 ">扫码登录</a>
+      </div>
+
+      <!-- 第一种登录方式，账号登录 -->
+      <div action="" class="id_login">
+        <form action="../index.html" id="login">
+          <div class="one">
+            <input type="text" placeholder="邮箱/手机号码/小米ID/账号123" class="text">
+            <input type="password" placeholder="密码/密码123" class="password">
+          </div>
+          <div class="two">
+            <div class="phone_number">
+              <span>+86</span><input type="text" placeholder="手机号码">
+            </div>
+            <div class="security_code">
+              <input type="text" placeholder="短信验证码"><span><a href="javascript:;">获取验证码</a></span>
+            </div>
+          </div>
+          <!-- 提示信息 -->
+          <p class="trip"><i>!</i></p>
+          <input type="submit" value="登录" class="btn">
+        </form>
+        <div class="regsiter">
+          <p class="regsiter1">
+            <a href="javascript:;" class="short_node">手机短信登录/注册</a>
+          </p>
+          <p class="regsiter2">
+            <a href="lkl-zhuCe.html" target="_blank">立即注册</a> <em>|</em>
+            <a href="javascript:;">忘记密码？</a>
+          </p>
+        </div>
+        <div class="other_way">
+          <p class="other_ways">其他登录方式</p>
+          <div class="way_icon">
+            <a href="javascript:;"><i></i></a>
+            <a href="javascript:;"><i></i></a>
+            <a href="javascript:;"><i></i></a>
+            <a href="javascript:;"><i></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第一种登录方式，扫码登录 -->
+      <div class="QR_code">
+        <img src="../images/lkl/img/login/qr-code.png" alt="" class="QR">
+        <div class="app">
+          <p class="app_title">小米旗下App</p>
+          <div class="app_icon">
+            <a href="javascript:;"><i></i>米家</a>
+            <a href="javascript:;"><i></i>小米商城</a>
+            <a href="javascript:;"><i></i>小爱音箱</a>
+          </div>
+        </div>
+
+        <p class="message">
+          使用<span>小米商城APP</span> 扫一扫<br>
+          小米手机可打开「设置」>「小米帐号」扫码登录
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页面底部 选择语言和法律备案 -->
+  <footer class="footer">
+    <p>
+      <a href="javascript:;">简体 </a> |
+      <a href="javascript:;">繁体 </a> |
+      <a href="javascript:;">English </a> |
+      <a href="javascript:;">常见问题 </a> |
+      <a href="javascript:;">隐私政策 </a>
+    </p>
+    <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+  </footer>
+
+  <script src="../js/lkl-login.js"></script>
+</body>
+
+</html>

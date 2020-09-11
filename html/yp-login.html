@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米账号登录ing</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="shortcut icon" href="yplogin_favicon.ico" />
+  <link rel="stylesheet" href="../css/yp_login.css">
+  <script src="../js/yplogin.js"></script>
+</head>
+
+<body>
+  <!-- 登录表单部分 -->
+  <div class="yp_login">
+    <i class="lt_mi_logo">
+      <img src="../images/youpin/lt-mi-logo.png" alt="">
+    </i>
+    <p>小米账号登录</p>
+    <!-- 默认登录方式 -->
+    <form action="" class="login_style default_login">
+      <input type="text" placeholder="邮箱/手机号码/小米ID" class="login_count">
+      <input type="password" placeholder="请输入密码" class="login_pass">
+      <div class="wrong_alert">
+        <i class="icon_error"></i>
+        <span class="error_message">请输入账号</span>
+      </div>
+      <input type="submit" value="登录" formaction='javascript:;' class="login_btn">
+      <a href="javascript:;" class="phone_login_btn">手机短信登录/注册</a>
+      <div>
+        <a href="javascript:;" class="reg_now">立即注册</a>
+        <span class="separator">|</span>
+        <a href="javascript:;" class="forget_pass">忘记密码?</a>
+      </div>
+    </form>
+    <!-- 手机号登录方式 -->
+    <form action="" class="login_style phone_login">
+      <div class="login_count">
+        <span class="area_code">+86</span> <input type="text" placeholder="手机号码" class="phone_num">
+      </div>
+      <div class="login_pass">
+        <input type="password" placeholder="短信验证码" class="phone_message"><button formaction='javascript:;'
+          class="verification">获取验证码</button>
+      </div>
+      <div class="wrong_alert">
+        <i class="icon_error"></i>
+        <span class="error_message">请输入账号</span>
+      </div>
+      <input type="submit" value="立即登录/注册" formaction='javascript:;' class="login_btn">
+      <a href="javascript:;" class="phone_login_btn  tocount_login">用户名密码登录</a>
+      <div>
+        <a href="javascript:;" class="reg_now">收不到验证码</a>
+      </div>
+    </form>
+    <div class="other_log_method">其它方式登录</div>
+    <div class="log_method">
+      <a class="log_method_way log_method_way1">
+        <i class="qq_log_method"></i>
+      </a>
+      <a class="log_method_way log_method_way2">
+        <i class="sina_log_method"></i>
+      </a>
+      <a class="log_method_way log_method_way3">
+        <i class="alipay_log_method"></i>
+      </a>
+      <a class="log_method_way log_method_way4">
+        <i class="wechat_log_method"></i>
+      </a>
+    </div>
+    <!-- 二维码登录方式 -->
+    <!-- 二维码登录按钮绝对定位 -->
+    <a href="javascript:;" class="qrcode-trigger1"></a>
+  </div>
+  <div class="er_login">
+    <a href="javascript:;" class="qrcode-trigger2"></a>
+    <p class="code_title">小米帐号扫码登录</p>
+    <p class="code_help">请使用小米手机/米家等旗下APP扫码登录</p>
+    <img src="../images/youpin/login_erweima_yp.png" alt="">
+    <div class="other_log_method">小米旗下APP</div>
+    <div class="sub_brand">
+      <a href="javascript:;" class="app_item">
+        <i class="sub_brand_icon sub_brand_mijia "></i>
+        <span>米家</span>
+      </a>
+      <a href="javascript:;" class="app_item">
+        <i class="sub_brand_icon  sub_brand_mistore"></i>
+        <span>小米商城</span>
+      </a>
+      <a href="javascript:;" class="app_item">
+        <i class="sub_brand_icon sub_brand_aivoice"></i>
+        <span>小爱音响</span>
+      </a>
+
+    </div>
+
+  </div>
+  <!-- 底部copyright部分 -->
+  <div class="yp_login_copyright">
+    <div class="footer_nav">
+      <a href="javascipt:;">简体</a>
+      <span>|</span>
+      <a href="javascipt:;">繁体</a>
+      <span>|</span>
+      <a href="javascipt:;">English </a>
+      <span>|</span>
+      <a href="javascipt:;">常见问题 </a>
+      <span>|</span>
+      <a href="javascipt:;">隐私政策 </a>
+    </div>
+    <p class="copyright">小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+  </div>
+</body>
+
+</html>

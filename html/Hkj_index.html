@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米企业团购</title>
+    <!-- 引入初始化css -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入网页图标 -->
+    <link rel="shortcut icon" href="../html/favicon.ico">
+    <!-- 引入首页css -->
+    <link rel="stylesheet" href="../css/Hkj_index.css">
+    <!-- 引入 JQ 样式 js -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- 引入过度效果样式 js -->
+    <script src="../bootstrap/js/animate.js"></script>
+    <!-- 引入 首页js -->
+    <script src="../js/Hkj_index.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="Hkj_top_nav  Hkj_w">
+            <!-- 顶部导航栏 -->
+            <ul>
+                <li><a href="#">小米商城</a><em>|</em></li>
+                <li><a href="#">MIUI</a><em>|</em></li>
+                <li><a href="#">IoT</a><em>|</em></li>
+                <li><a href="#">云服务</a><em>|</em></li>
+                <li><a href="#">金融</a><em>|</em></li>
+                <li><a href="#">有品</a><em>|</em></li>
+                <li><a href="#">小爱开放平台</a><em>|</em></li>
+                <li><a href="#">企业团购</a><em>|</em></li>
+                <li><a href="#">资质证照</a><em>|</em></li>
+                <li><a href="#">协议规则</a><em>|</em></li>
+                <li><a href="#">下载app</a></li>
+            </ul>
+            <!-- 登录   注册  -->
+            <div class="Hkj_login">
+                <span><a href="#">登录</a><em>|</em></span>
+                <span><a href="#">注册</a></span>
+            </div>
+            <!-- 购物车模块 -->
+            <div class="Hkj_gou"><a href="#">
+                    <span></span>
+                    企业购物车(0)</a>
+                <div class="ove">
+                    购物车中还没有商品，赶紧选购吧！
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('.Hkj_gou').mouseover(function () {
+                    $('.Hkj_gou .ove').stop().slideDown()
+                })
+                $('.Hkj_gou').mouseleave(function () {
+                    $('.Hkj_gou .ove').stop().slideUp()
+                })
+            })
+        </script>
+    </header>
+    <!-- 颈部 模块-->
+    <div class="box_box">
+        <div class="Hkj_center_nav  Hkj_w">
+            <!-- log 模块 -->
+            <div class="Hkj_log">
+                <a href="#" title="小米企业团购">
+                    <img src="../images/hkj/mi-logo.png" alt="">
+                    <h1>企业购</h1>
+                </a>
+            </div>
+            <!-- 导航栏  -->
+            <ul class="Hkj_nav">
+                <li><a href="#">新品 ▪ 礼品卡</a></li>
+                <li><a href="#">手机 ▪ 平板 </a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">家电</a></li>
+                <li><a href="#">智能 ▪ 路由器</a></li>
+                <li><a href="#">耳机 ▪ 音箱</a></li>
+                <li><a href="#">生活 ▪ 儿童</a></li>
+                <li><a href="#">配件 ▪ 车品</a></li>
+            </ul>
+            <!-- 搜索模块 -->
+            <div class="Hkj_search">
+                <input type="text">
+                <input type="button" value="">
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图模块 -->
+    <!-- main 模块 -->
+    <div class="Hkj_main  Hkj_w ">
+        <div class="focus fl  ">
+            <!-- 左侧按钮  -->
+            <a href="javascript:;" class="arrow-l">
+                &lt;
+            </a>
+            <!-- 右侧按钮 -->
+            <a href="javascript:;" class="arrow-r"> &gt; </a>
+            <!-- 核心的滚动区域 -->
+            <ul>
+                <li>
+                    <a href="#"><img src="../images/hkj/nav.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/hkj/nav1.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/hkj/nav2.jpg" alt=""></a>
+                </li>
+
+
+            </ul>
+            <!-- 小圆圈 -->
+            <ol class="circle">
+
+            </ol>
+            <!-- 右侧企业专属icon 模块  -->
+            <div class="fr">
+                <div class="icon">
+                    <img src="../images/hkj/icon_face.png" alt="">
+                    <h2>你好，欢迎回来</h2>
+                    <span><a href="#">登录企业账户开始采购></a></span>
+                </div>
+                <!-- 企业专属特权介绍模块 -->
+                <div class="vip">
+                    <h3>企业专属特权</h3>
+                    <ul>
+                        <li>
+                            <div></div>
+                            <h4>专属价格</h4>
+                            <span>精选货品，专属优惠</span>
+                        </li>
+                        <li>
+                            <div></div>
+                            <h4>自主开票</h4>
+                            <span>全场商品，增票开据</span>
+                        </li>
+                        <li>
+                            <div></div>
+                            <h4>便捷支付</h4>
+                            <span>对公转账，票款一致</span>
+                        </li>
+                        <li>
+                            <div></div>
+                            <h4>专业售后</h4>
+                            <span>小米直供，售后无忧</span>
+                        </li>
+
+                    </ul>
+                    <p><a href="#">更多会员管理规则，请点击></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新品模块 -->
+    <div class="Hkj_new Hkj_w">
+        <ul>
+            <li><a href="#"><img src="../images/hkj/mI1.jpg" alt=""></a></li>
+
+            <li><a href="#"><img src="../images/hkj/mI2.jpg" alt=""></a></li>
+
+            <li><a href="#"><img src="../images/hkj/mI3.jpg" alt=""></a></li>
+
+            <li><a href="#"><img src="../images/hkj/mi4.png" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- 右边固定导航模块 -->
+    <div class="box">
+        <div class="ma">
+            <img src="../images/hkj/二维码.jpg" alt="">
+        </div>
+        <ul>
+            <li class="ma_Y">
+                <div><img src="../images/hkj/shouji1.png" alt=""></div>
+                <div><img src="../images/hkj/shouji2.png" alt=""></div>
+                <span>官方微信</span>
+            </li>
+            <li>
+                <div><img src="../images/hkj/kefu1.png" alt=""></div>
+                <div><img src="../images/hkj/kefu2.png" alt=""></div>
+                <span>团购客服</span>
+            </li>
+            <li>
+                <div><a href="#"><img src="../images/hkj/che1.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/hkj/che2.png" alt=""></a></div>
+                <span><a href="#">购物车</a></span>
+            </li>
+            <li class="Y">
+                <div><a href="javascript:;"><img src="../images/hkj/dingbu1.png" alt=""></a></div>
+                <div><a href="javascript:;"><img src="../images/hkj/dingbu2.png" alt=""></a></div>
+                <span><a href="javascript:;">回顶部</a></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 商品介绍模块 -->
+    <div class="content">
+        <!-- 新品-礼品卡 -->
+        <div class="nav_1 Hkj_w">
+            <h1>新品 ▪ 礼品卡</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/center1.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/center2.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/center2.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/center1.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/center3.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 手机平板 -->
+        <div class="nav_1 Hkj_w">
+            <h1>手机 ▪ 平板</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/平板.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/平板.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/平板.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/平板.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/平板.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 笔记本 -->
+        <div class="nav_1 Hkj_w">
+            <h1>笔记本</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/笔记本.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/笔记本.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/笔记本.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/笔记本.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/笔记本.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 家电 -->
+        <div class="nav_1 Hkj_w">
+            <h1>家电</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/家电.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/家电.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/家电.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/家电.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/家电.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 智能路由器 -->
+        <div class="nav_1 Hkj_w">
+            <h1>智能 ▪ 路由器</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/路由器.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/路由器.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/路由器.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/路由器.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/路由器.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 耳机音箱 -->
+        <div class="nav_1 Hkj_w">
+            <h1>耳机 ▪ 音箱</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/音箱.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/音箱.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/音箱.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/音箱.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/音箱.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 生活 儿童 -->
+        <div class="nav_1 Hkj_w">
+            <h1>生活 ▪ 儿童</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/儿童.png" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/儿童.png" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/儿童.png" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/儿童.png" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/儿童.png" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 配件 车品 -->
+        <div class="nav_1 Hkj_w">
+            <h1>配件 ▪ 车品</h1>
+            <a href="#">查看全部 <i>></i></a>
+        </div>
+        <div class="nav_2 Hkj_w">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/车品.jpg" alt="">
+                        <p>小米10 Pro 全网通版 </p>
+                        <span> 小米10 Pro 全网通版</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/车品.jpg" alt="">
+                        <p>小米手环5 NFC版</p>
+                        <span> 小米手环5 NFC版 黑色</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/车品.jpg" alt="">
+                        <p>小米手环 5</p>
+                        <span> 小米手环 5</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/车品.jpg" alt="">
+                        <p>小米10 Pro 全网通版 8GB+258GB</p>
+                        <span> 小米10 Pro 全网通版 8GB+258GB</span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/hkj/车品.jpg" alt="">
+                        <p>米家电子体温计 白色 </p>
+                        <span> 米家电子体温计 白色 </span>
+                        <div class="dibu"><a href="#">登录企业账户开始采购</a></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 采购流程及声明 -->
+        <div class="button_nav Hkj_w">
+            <h1>采购流程</h1>
+            <p>采购仅需4步，2个工作日内完成审核，到账后5个工作日内发货</p>
+            <div class="num">
+                <ul>
+                    <li>
+                        <div>1</div>
+                        <p>下单</p>
+                    </li>
+                    > > > >
+                    <li>
+                        <div>2</div>
+                        <p>审核</p>
+                    </li>
+                    > > > >
+                    <li>
+                        <div>3</div>
+                        <p>支付</p>
+                    </li>
+                    > > > >
+                    <li>
+                        <div>4</div>
+                        <p>发货</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 会员管理 -->
+        <div class="vip_gz ">
+            <a href="#">小米企业购会员管理规则，请点击></a>
+        </div>
+        <!-- 底部导读栏 -->
+        <div class="button_new">
+            <div class="button_x   Hkj_w">
+                <ul>
+                    <li><a href="#"><i></i>新浪微博</a></li>
+                    <li><a href="#"><i></i>官方微信</a></li>
+                    <li><a href="#"><i></i>企业购在线客服</a></li>
+                    <li><a href="#"><i></i>010-53287305</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 底部信息栏 -->
+        <div class="box_b  Hkj_w">
+            <div class="log"><img src="../images/hkj/mi-logo.png" alt=""></div>
+            <ul>
+                <li><a href="#">小米商城</a></li>|
+                <li><a href="#">MIUI</a></li>|
+                <li><a href="#">米家</a></li>|
+                <li><a href="#">米聊</a></li>|
+                <li><a href="#">多看</a></li>|
+                <li><a href="#">游戏</a></li>|
+                <li><a href="#">路由器</a></li>|
+                <li><a href="#">米粉卡</a></li>|
+                <li><a href="#">政企服务</a></li>|
+                <li><a href="#">小米天猫店</a></li>|
+                <li><a href="#">隐私政策</a></li>|
+                <li><a href="#">商城用户协议</a></li>|
+                <li><a href="#">账号协议</a></li>|
+                <li><a href="#">问题反馈</a></li>|
+                <li><a href="#">廉正举报</a></li>|
+                <li><a href="#">诚信合规</a></li>
+            </ul>
+            <div class="ps">
+                <p> <a href="#">© mi.com</a> 京ICP证110507号
+                    <a href="#">京ICP备10046444号</a>
+                    <a href="#">京公网安备11010802020134号</a>
+                    <a href="#">京网文[2017]1530-131号</a>
+                </p>
+                <p>
+                    <a href="#">（京）网械平台备字（2018）第00005号</a>
+                    <a href="#">互联网药品信息服务资格证 (京) -非经营性-2014-0090</a>
+                    <a href="#">营业执照</a>
+                    <a href="#">医疗器械公告</a>
+                </p>
+                <p>
+                    <a href="#"> 增值电信业务许可证</a>
+                    网络食品经营备案（京）【2018】WLSPJYBAHF-12
+                    <a href="#">食品经营许可证</a>
+                </p>
+                <p>
+                    违法和不良信息举报电话：185-0130-1238 <a href="#">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                </p>
+                <p>
+                    <a href="#"><img src="../images/hkj/1111.png" alt=""></a>
+                    <a href="#"><img src="../images/hkj/22222.png" alt=""></a>
+                    <a href="#"><img src="../images/hkj/33333.png" alt=""></a>
+                    <a href="#"><img src="../images/hkj/44444.png" alt=""></a>
+                    <a href="#"><img src="../images/hkj/55555.png" alt=""></a>
+                </p>
+            </div>
+            <div class="mi_ir">探 索 黑 科 技 , 小 米 为 发 烧 而 生 !</div>
+        </div>
+    </div>
+</body>
+
+</html>

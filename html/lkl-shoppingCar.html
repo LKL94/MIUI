@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的购物车-小米商城</title>
+  <!-- 引入favicon图标 -->
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <!-- 引入基础样式表 -->
+  <link rel="stylesheet" href="../css/lkl/base.css">
+  <!-- 引入页面样式表 -->
+  <link rel="stylesheet" href="../css/lkl/lkl-shoppingCar.css">
+</head>
+
+<body>
+
+  <!-- 1 头部logo和标题部分 -->
+  <header class="header">
+    <div class="container w">
+      <!-- 1.1 小米logo -->
+      <h1>
+        小米官网<a href="../index.html" class="top_logo" title="小米官网"> </a>
+      </h1>
+
+      <!-- 1.2 购物车标题 -->
+      <div class="title">
+        <h2>我的购物车</h2>
+        <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+      </div>
+
+      <!-- 1.3 账号信息+我的订单 -->
+      <div class="message">
+        <div class="person_details">
+          <span>lkl94</span>
+          <ul class="hide">
+            <li>个人中心</li>
+            <li>评价晒单</li>
+            <li>我的喜欢</li>
+            <li>小米账户</li>
+            <li>退出登录</li>
+          </ul>
+        </div> <em>|</em>
+        <span class="my_order">我的订单</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2 中间购物车主要内容区域 -->
+  <section class="main">
+
+    <!-- 2.1 购物车主要核心区域 -->
+    <div class="shopping_box w">
+
+      <!-- 头部全选模块 -->
+      <div class="cart_thead">
+        <div class="t_checkbox">
+          <input type="checkbox" name="" id="" class="checkall"> 全选
+        </div>
+        <div class="t_goods">商品名称</div>
+        <div class="t_price">单价</div>
+        <div class="t_num">数量</div>
+        <div class="t_sum">小计</div>
+        <div class="t_action">操作</div>
+      </div>
+
+      <!-- 商品详细模块 -->
+      <div class="cart_list">
+        <div class="cart_item">
+          <div class="p_checkbox">
+            <input type="checkbox" name="" id="" class="j-checkbox">
+          </div>
+          <div class="p_goods">
+            <div class="p_img">
+              <img src="../images/lkl/upload/index/shopping1.jpg" alt="">
+            </div>
+            <div class="p_msg">
+              小米10至尊纪念版 8GB+256GB 陶瓷黑</div>
+          </div>
+          <div class="p_price">5999元</div>
+          <div class="p_num">
+            <div class="quantity_form">
+              <a href="javascript:;" class="decrement">-</a>
+              <input type="text" class="itxt" value="1">
+              <a href="javascript:;" class="increment">+</a>
+            </div>
+          </div>
+          <div class="p_sum"></div>
+          <div class="p_action"><a href="javascript:;">删除</a></div>
+        </div>
+        <div class="cart_item">
+          <div class="p_checkbox">
+            <input type="checkbox" name="" id="" class="j-checkbox">
+          </div>
+          <div class="p_goods">
+            <div class="p_img">
+              <img src="../images/lkl/upload/index/shopping2.jpg" alt="">
+            </div>
+            <div class="p_msg">手机USB micro 数据线 白色</div>
+          </div>
+          <div class="p_price">9.9元</div>
+          <div class="p_num">
+            <div class="quantity_form">
+              <a href="javascript:;" class="decrement">-</a>
+              <input type="text" class="itxt" value="1">
+              <a href="javascript:;" class="increment">+</a>
+            </div>
+          </div>
+          <div class="p_sum"></div>
+          <div class="p_action"><a href="javascript:;">删除</a></div>
+        </div>
+        <div class="cart_item">
+          <div class="p_checkbox">
+            <input type="checkbox" name="" id="" class="j-checkbox">
+          </div>
+          <div class="p_goods">
+            <div class="p_img">
+              <img src="../images/lkl/upload/index/shopping3.jpg" alt="">
+            </div>
+            <div class="p_msg">小米真无线蓝牙耳机 Air 2 白色</div>
+          </div>
+          <div class="p_price">299元</div>
+          <div class="p_num">
+            <div class="quantity_form">
+              <a href="javascript:;" class="decrement">-</a>
+              <input type="text" class="itxt" value="1">
+              <a href="javascript:;" class="increment">+</a>
+            </div>
+          </div>
+          <div class="p_sum"></div>
+          <div class="p_action"><a href="javascript:;">删除</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 结算模块 -->
+    <div class="accounts w">
+      <div class="l_accounts">
+        <div> <a href="../index.html">继续购物</a></div>
+        <div>共 <span class="number1">2</span> 件商品 ，已选择<span class="number2">1</span> 件</div>
+      </div>
+      <div class="r_accounts">
+        <div class="total">合计：<span>0</span>元</div>
+        <a href="javascript:;">去结算</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 其他商品 -->
+  <section class="ohter_goods ">
+    <div class="goods_main w">
+      <div class="hd_goods">买购物车中商品的人还买了</div>
+      <ul class="clearfix list">
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/phone(8).jpg" alt="">
+            <h3>Redmi K30 Pro 变焦版</h3>
+            <p>3799元</p>
+            <p>3.5万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/phone(1).jpg" alt="">
+            <h3>小米10 至尊版</h3>
+            <p>5999元</p>
+            <p>350万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/jiadian14.jpg" alt="">
+            <h3>5.6" 四核i7 16G 独显 512G</h3>
+            <p>4899元</p>
+            <p>15.6万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/match04.jpg" alt="">
+            <h3>高速无线充套装</h3>
+            <p>99元</p>
+            <p>30.5万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/parts03.jpg" alt="">
+            <h3>移动电源高配版（10000mAh）</h3>
+            <p>149元</p>
+            <p>200万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/zhoubian07.jpg" alt="">
+            <h3>小米巨能写中性笔10支装</h3>
+            <p>9.9元</p>
+            <p>5万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/zhoubian10.jpg" alt="">
+            <h3>贝医生巴氏牙刷 四色装</h3>
+            <p>39.9元</p>
+            <p>3.5万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/zhoubian17.jpg" alt="">
+            <h3>九号平衡车</h3>
+            <p>2799元</p>
+            <p>50万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/match14.jpg" alt="">
+            <h3>小米蓝牙耳机青春版</h3>
+            <p>99元</p>
+            <p>31.5万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+        <li class="list_item">
+          <a href="javascript:;">
+            <img src="../images/lkl/upload/index/intel-trip06.jpg" alt="">
+            <h3>小米旅行箱 青春款</h3>
+            <p>399元</p>
+            <p>15万好评</p>
+          </a>
+          <span class="join">加入购物车</span>
+          <span class="joined">成功加入购物车</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!--  页面底部 -->
+  <footer class="footer">
+    <!-- 内容部分 -->
+    <div class="cont_footer w">
+
+      <!-- 1顶部预约维修模块 -->
+      <div class="hd_conts">
+        <div class="hd_cont"><a href="javascript:;"><span>&#xe624;</span> 预约维修服务</a></div>
+        <div class="hd_cont"><a href="javascript:;"><span>&#xe619;</span> 7天无理由退货</a></div>
+        <div class="hd_cont"><a href="javascript:;"><span>&#xe61a;</span> 15天免费换货</a></div>
+        <div class="hd_cont"><a href="javascript:;"><span>&#xe732;</span> 满99元包邮</a></div>
+        <div class="hd_cont"><a href="javascript:;"><span>&#xe67d;</span> 520余家售后网点</a></div>
+      </div>
+
+      <!-- 2 帮助中心 -->
+      <div class="help_center">
+
+        <div class="l_help">
+          <dl class="item">
+            <dt>帮助中心</dt>
+            <dd><a href="javascript:;">账户管理</a></dd>
+            <dd><a href="javascript:;">购物指南</a></dd>
+            <dd><a href="javascript:;">订单操作</a></dd>
+          </dl>
+          <dl class="item">
+            <dt>服务支持</dt>
+            <dd><a href="javascript:;">售后政策</a></dd>
+            <dd><a href="javascript:;">自助服务</a></dd>
+            <dd><a href="javascript:;">相关下载</a></dd>
+          </dl>
+          <dl class="item">
+            <dt>线下门店</dt>
+            <dd><a href="javascript:;">小米之家</a></dd>
+            <dd><a href="javascript:;">服务网点</a></dd>
+            <dd><a href="javascript:;">授权体验店</a></dd>
+          </dl>
+          <dl class="item">
+            <dt>关于小米</dt>
+            <dd><a href="javascript:;">了解小米</a></dd>
+            <dd><a href="javascript:;">加入小米</a></dd>
+            <dd><a href="javascript:;">投资者关系</a></dd>
+            <dd><a href="javascript:;">企业社会责任</a></dd>
+            <dd><a href="javascript:;">廉洁举报</a></dd>
+          </dl>
+          <dl class="item">
+            <dt>关注我们</dt>
+            <dd><a href="javascript:;">新浪微博</a></dd>
+            <dd><a href="javascript:;">官方微信</a></dd>
+            <dd><a href="javascript:;">联系我们</a></dd>
+            <dd><a href="javascript:;">公益基金会</a></dd>
+          </dl>
+          <dl class="item">
+            <dt>特色服务</dt>
+            <dd><a href="javascript:;">F 码通道</a></dd>
+            <dd><a href="javascript:;">礼物码</a></dd>
+            <dd><a href="javascript:;">防伪查询</a></dd>
+          </dl>
+        </div>
+
+        <div class="r_help">
+          <p>400-100-5678</p>
+          <p>8:00-18:00（仅收市话费）</p>
+          <a href="javascript:;"><span>&#xe7b3;</span>人工客服</a>
+          <p>
+            关注小米：
+            <a href="javascript:;">
+              &#xe618;
+            </a>
+            <a href="javascript:;">
+              &#xe60a;
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 底部导航栏 -->
+      <div class="footer_nav">
+        <a href="javascript:;">小米商城</a><span>|</span>
+        <a href="javascript:;">MIUI</a><span>|</span>
+        <a href="javascript:;">米家</a><span>|</span>
+        <a href="javascript:;">米聊</a><span>|</span>
+        <a href="javascript:;">金融</a><span>|</span>
+        <a href="javascript:;">多看</a><span>|</span>
+        <a href="javascript:;">游戏</a><span>|</span>
+        <a href="javascript:;">政企服务</a><span>|</span>
+        <a href="javascript:;">小米天猫店</a><span>|</span>
+        <a href="javascript:;">小米集团隐私政策</a><span>|</span>
+        <a href="javascript:;">小米公司儿童信息保护规则</a><span>|</span>
+        <a href="javascript:;">小米商城隐私政策</a><span>|</span>
+        <a href="javascript:;">小米商城用户协议</a><span>|</span>
+        <a href="javascript:;">问题反馈</a><span>|</span>
+        <a href="javascript:;">Select Location</a>
+      </div>
+
+      <!-- 4 法律信息 -->
+      <p class="law">
+        <br>
+        <a href="javascript:;"><span> © mi.com</span></a> 京ICP证110507号
+        <a href="javascript:;">京ICP备10046444号</a>
+        <a href="javascript:;">京公网安备11010802020134号</a>
+        <a href="javascript:;">京网文[2020]0276-042号</a><br>
+        <a href="javascript:;">（京）网械平台备字（2018）第00005号</a>
+        <a href="javascript:;">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+        <a href="javascript:;">营业执照</a>
+        <a href="javascript:;">医疗器械质量公告</a><br>
+        <a href="javascript:;">增值电信业务许可证</a> 网络食品经营备案 京食药网食备201810017
+        <a href="javascript:;">食品经营许可证</a><br>
+        违法和不良信息举报电话：171-5104-4404 <a href="javascript:;">知识产权侵权投诉</a>
+        本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+      </p>
+
+      <!-- 5 诚信经营 -->
+      <div class="honest">
+        <a href="javascript:;"><img src="../images/lkl/img/index/truste.png" alt=""></a>
+        <a href="javascript:;"><img src="../images/lkl/img/index/v-logo-1.png" alt=""></a>
+        <a href="javascript:;"><img src="../images/lkl/img/index/v-logo-2.png" alt=""></a>
+        <a href="javascript:;"><img src="../images/lkl/img/index/v-logo-3.png" alt=""></a>
+      </div>
+
+      <!-- 6 科技让生活更美好 -->
+      <div class="slogan">
+
+      </div>
+    </div>
+  </footer>
+  <script src="../js/lkl-shoppingCar.js"></script>
+</body>
+
+</html>

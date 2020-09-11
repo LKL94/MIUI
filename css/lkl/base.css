@@ -1,0 +1,76 @@
+/**
+ * /* 把我们所有标签的内外边距清零
+ *
+ * @format
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+
+em {
+	font-style: normal;
+}
+/* 去掉li 的小圆点 */
+
+li {
+	list-style: none;
+}
+
+img {
+	/* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+	border: 0;
+	/* 取消图片底侧有空白缝隙的问题 */
+	vertical-align: middle;
+}
+
+button {
+	/* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+	cursor: pointer;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+button,
+input {
+	/* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+	outline: none;
+	font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+		'\5B8B\4F53', sans-serif;
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+	visibility: hidden;
+	clear: both;
+	display: block;
+	content: '.';
+	height: 0;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../../font/lkl/iconfont.eot');
+	src: url('../../font/lkl/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../../font/lkl/iconfont.woff2') format('woff2'),
+		url('../../font/lkl/iconfont.woff') format('woff'),
+		url('../../font/lkl/iconfont.ttf') format('truetype'),
+		url('../../font/lkl/iconfont.svg#iconfont') format('svg');
+}

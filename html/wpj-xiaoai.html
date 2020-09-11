@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小爱同学</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/wpj-xiaoai.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="w" style="height: 100%;">
+            <div class="logo"></div>
+            <ul>
+                <li><a href="#">获得小爱</a></li>
+                <li class="zhineng"><a href="#">智能家居</a></li>
+                <li><a href="#">获得小爱</a></li>
+                <li><a href="#">小爱论坛</a></li>
+                <li><a href="#">获得小爱</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="znjj">
+            <div class="w">
+                <ul>
+                    <li style="font-size: 13px;">智能电视</li>
+                    <li style="font-size: 13px;">智能电视</li>
+                    <li style="font-size: 13px;">智能电视</li>
+                    <li style="font-size: 13px;">智能电视</li>
+                    <li style="font-size: 13px;">智能电视</li>
+                    <li style="font-size: 13px;">智能电视</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="lxwm"></div> -->
+
+    </div>
+    <script>
+        $('.zhineng,.znjj').mouseenter(function () {
+            $('.znjj').stop().slideDown()
+        })
+        // $('.znjj').mouseenter(function () {
+        //     $(this).stop().slideDown()
+        // })
+        $('.zhineng,.znjj').mouseleave(function () {
+            $('.znjj').stop().slideUp()
+        })
+
+    </script>
+    <div class="firstlunbo">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/wpj-xiaoai/lunbo1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../images/wpj-xiaoai/lunbo2.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        $('.firstlunbo').on({
+            mouseenter: function () {
+                $('.swiper-button-next,.swiper-button-prev').stop().fadeIn()
+            },
+            mouseleave: function () {
+                $('.swiper-button-next,.swiper-button-prev').stop().fadeOut()
+            }
+        })
+        // $('.firstlunbo').hover(function () {
+        //     $('.swiper-button-next,.swiper-button-prev').toggle()
+        // })
+    </script>
+    <div class="chuangxin">
+        <div class="w">
+            <ul>
+                <li><img src="../images/wpj-xiaoai/chuangxin.png" alt=""><span>创新功能</span></li>
+                <li><img src="../images/wpj-xiaoai/chuangxin.png" alt=""><span>全部技能</span></li>
+                <li><img src="../images/wpj-xiaoai/chuangxin.png" alt=""><span>小爱同学3.0</span></li>
+                <li><img src="../images/wpj-xiaoai/chuangxin.png" alt=""><span>智能场景</span></li>
+                <li><img src="../images/wpj-xiaoai/chuangxin.png" alt=""><span>智能生活家</span></li>
+                <li><img src="../images/wpj-xiaoai/chuangxin.png" alt=""><span>开发平台</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="erlunbo">
+        <div class="w">
+            <div class="liaotian">
+                <img src="../images/wpj-xiaoai/xiaoai.png" alt="" style="width: 200px;">
+                <img src="../images/wpj-xiaoai/wozai.png" alt="" style="width: 140px;">
+
+                <p>智能生活早已从梦想走进现实，走进千家万户,现在就说出“小爱同学”唤醒设备，开启智能生活吧</p>
+            </div>
+        </div>
+        <div class="kevin">
+            <ul>
+                <li><img src="../images/wpj-xiaoai/yinxiang.png" alt=""></li>
+                <li><img src="../images/wpj-xiaoai/shouji.png" alt=""></li>
+                <li><img src="../images/wpj-xiaoai/naozhong.png" alt=""></li>
+                <li><img src="../images/wpj-xiaoai/shouhuan.png" alt=""></li>
+                <li><img src="../images/wpj-xiaoai/yinxiang.png" alt=""></li>
+            </ul>
+        </div>
+        <span class="left">&lt;</span>
+        <span class="right">&gt;</span>
+        <ol>
+            <li class="color">音响</li>
+            <li>手机</li>
+            <li>闹钟</li>
+            <li>手表</li>
+        </ol>
+    </div>
+    <script>
+        var w = $('.kevin img').width()
+        var n = 0;
+        var s = 0;
+        var flag = true;
+        $('.right').on('click', function () {
+            if (flag) {
+                flag = false
+                if (n === 4) {
+                    n = 0
+                    $('.kevin ul').css({
+                        left: -w * n + 'px'
+                    })
+                }
+                n++;
+                $('.kevin ul').stop().animate({
+                    left: -w * n + 'px'
+                }, function () {
+                    flag = true
+                })
+                s++;
+                if (s === 4) {
+                    s = 0
+                }
+                $('.erlunbo ol li').eq(s).addClass('color').siblings().removeClass('color')
+
+            }
+        })
+        $('.left').on('click', function () {
+            if (flag) {
+                flag = false
+                if (n <= 0) {
+                    n = 4
+                    $('.kevin ul').css({
+                        left: -w * n + 'px'
+                    })
+                }
+                n--;
+                $('.kevin ul').stop().animate({
+                    left: -w * n + 'px'
+                }, function () {
+                    flag = true
+                })
+                s--;
+                if (s < 0) {
+                    s = 3
+                }
+                $('.erlunbo ol li').eq(s).addClass('color').siblings().removeClass('color')
+            }
+        })
+        $('.erlunbo ol li').each(function (i, e) {
+            $(e).attr('data-index', i)
+        })
+        $('.erlunbo ol li').on('click', function () {
+            var index = $(this).attr('data-index')
+            n = index
+            s = index
+            console.log(n);
+            $('.kevin ul').stop().animate({
+                left: -w * index + 'px'
+            })
+            $(this).addClass('color').siblings().removeClass('color')
+        })
+
+
+    </script>
+    <div class="one dianti">
+        <div class="w">
+            <h1>小爱同学创新功能</h1>
+            <ul>
+                <li>
+                    <img src="../images/wpj-xiaoai/one-pic.png" alt="">
+                    <h3>情感人声</h3>
+                    <p>智能分析情感倾向，让声音富有情感，饱满的情绪带来更自然的人机交互，让科技更有人情味</p>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/one-pic.png" alt="">
+                    <h3>情感人声</h3>
+                    <p>智能分析情感倾向，让声音富有情感，饱满的情绪带来更自然的人机交互，让科技更有人情味</p>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/one-pic.png" alt="">
+                    <h3>情感人声</h3>
+                    <p>智能分析情感倾向，让声音富有情感，饱满的情绪带来更自然的人机交互，让科技更有人情味</p>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/one-pic.png" alt="">
+                    <h3>情感人声</h3>
+                    <p>智能分析情感倾向，让声音富有情感，饱满的情绪带来更自然的人机交互，让科技更有人情味</p>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/one-pic.png" alt="">
+                    <h3>情感人声</h3>
+                    <p>智能分析情感倾向，让声音富有情感，饱满的情绪带来更自然的人机交互，让科技更有人情味</p>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/one-pic.png" alt="">
+                    <h3>情感人声</h3>
+                    <p>智能分析情感倾向，让声音富有情感，饱满的情绪带来更自然的人机交互，让科技更有人情味</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="two dianti">
+        <div class="w">
+            <h1>
+                1400+技能 <br>
+                更多技能持续接入
+            </h1>
+            <ul>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/two-ph.png" alt="">
+                    <span>打电话</span>
+                </li>
+            </ul>
+            <a href="javascript:;">了解更多技能<img src="../images/wpj-xiaoai/a.png" alt=""></a>
+        </div>
+    </div>
+    <div class="three dianti">
+        <div class="w">
+            <h1>
+                小爱同学3.0 全新升级
+            </h1>
+            <p>
+                全新设计带来使用沉浸式交互体验，不仅更新了联系语音对话，AI电话助理等功能，更推出男生版语音，暖心伴你同行
+            </p>
+            <a href="javascript:;">了解更多<img src="../images/wpj-xiaoai/a.png" alt=""></a>
+            <div>
+                <img src="../images/wpj-xiaoai/three-pic.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="four dianti">
+        <div class="w">
+            <h1>智能场景</h1>
+            <p>35个设备，751款智能设备*，全方位覆盖智能家庭生活的方方面面</p>
+            <span>*数据截至2019年11月</span>
+            <div class="four1">
+                <li>
+                    <img src="../images/wpj-xiaoai/four-tv.png" alt="">
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/four-tv.png" alt="">
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/four-tv.png" alt="">
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/four-tv.png" alt="">
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/four-tv.png" alt="">
+                </li>
+                <li>
+                    <img src="../images/wpj-xiaoai/four-tv.png" alt="">
+                </li>
+            </div>
+            <a href="javascript:;">了解更多<img src="../images/wpj-xiaoai/a.png" alt=""></a>
+        </div>
+    </div>
+    <div class="five dianti">
+        <div class="w">
+            <h1>小米智能生活家</h1>
+            <p>一次看懂近百种智能生活，家居方案</p>
+            <button>了解更多</button>
+        </div>
+    </div>
+    <div class="six dianti">
+        <div class="w">
+            <h1>小米小爱开放平台</h1>
+            <p>基于小米的硬件生态和海量数据，提供全球领先的语音识别，NLP等多项人工智能技术, <br>
+                为开发者提供一站式的人工智能服务</p>
+            <button>了解更多</button>
+        </div>
+    </div>
+    <div class="pinpai dianti">
+        <div class="w">
+            <h1>合作品牌</h1>
+            <div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/wpj-xiaoai/end.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="w">
+            <div class="tou">
+                <li>小米商城</li>
+                <li>小米官方店</li>
+                <li>小米快车</li>
+                <li>小米的微博</li>
+                <li>小米客服微信</li>
+                <div>
+                    <img src="../images/wpj-xiaoai/weixin.jpg" alt="">
+                </div>
+            </div>
+            <div class="wei">
+                <span>京ICP证 110507 号</span>
+                <em>丨</em>
+                <span>京ICP备 10046444 号
+                </span>
+                <em>丨</em>
+                <span>京公网安备 11010802020134 号</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.tou li').eq(4).hover(function () {
+            $('.tou div').toggle()
+        })
+    </script>
+    <button class="dingbu">返回顶部</button>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() >= $('.erlunbo').offset().top) {
+                $('.dingbu').show()
+            } else (
+                $('.dingbu').hide()
+            )
+        })
+        $('.dingbu').on('click', function () {
+            // $('body,html').animate({
+            //     scrollTop: 0
+            // })
+            $('body,html').scrollTop(0)
+        })
+        $('.chuangxin li').on('click', function () {
+            var num = $(this).index();
+            tope = $('.dianti').eq(num).offset().top.toFixed(0)
+            // console.log(tope);
+            // $('body,html').stop().animate({
+            //     scrollTop: tope
+            // })
+            $('body,html').scrollTop(tope)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,694 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../font/fonts/icomoon.eot?b3ebk5");
+  src: url("../font/fonts/icomoon.eot?b3ebk5#iefix") format("embedded-opentype"),
+    url("../font/fonts/icomoon.ttf?b3ebk5") format("truetype"),
+    url("../font/fonts/icomoon.woff?b3ebk5") format("woff"),
+    url("../font/fonts/icomoon.svg?b3ebk5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.lt_w {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.lt_body {
+  height: 3000px;
+  font: 14px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+    "\5B8B\4F53", sans-serif;
+}
+
+.lt_hd a {
+  font-size: 14px;
+  color: #e7e7e7;
+}
+
+/* 顶部 header制作*/
+.lt_hd {
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+}
+
+header .lt_w ul {
+  float: right;
+}
+
+header .lt_w>ul>li {
+  float: left;
+  line-height: 50px;
+}
+
+header .lt_w>ul>li:nth-child(even) {
+  padding: 0 15px;
+  color: #666;
+}
+
+header .lt_w li:nth-child(1) a {
+  padding: 0 2px;
+}
+
+header .lt_w li:nth-child(5)>a::before {
+  content: "\e959";
+  font-family: "icomoon";
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+header .lt_w .protocol>a::after {
+  content: "\e91e";
+  font-family: "icomoon";
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+header .lt_w li a:hover {
+  color: #fff;
+}
+
+.lt_hd .protocol {
+  position: relative;
+}
+
+.lt_hd .protocol_list {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 148px;
+  height: 70px;
+  background-color: #fff;
+}
+
+.lt_hd .protocol_list a {
+  display: block;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.lt_hd .protocol_list a:hover {
+  background-color: #8c5d3d;
+  color: #fff;
+}
+
+.lt_hd .protocol_list a {
+  color: #333;
+}
+
+/* mycount下拉菜单部分css */
+.mycount_box {
+  position: relative;
+  z-index: 999;
+}
+
+.mycount {
+  display: block;
+  width: 150px;
+}
+
+.mycount::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/youpin/shop_yp_count.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.mycount::after {
+  content: "\e91e";
+  font-family: "icomoon";
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.mycount_item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  top: 50px;
+  left: 25px;
+  width: 100px;
+  height: 210px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.mycount_box .mycount_item li {
+  line-height: 30px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mycount_box .mycount_item li:hover {
+  background-color: #8c5d3d;
+  color: #fff;
+}
+
+/* 1.导航栏头部 lt_nav_hd部分 */
+.yp_nav_fixed {
+  width: 100%;
+  z-index: 999;
+}
+
+.lt_nav_hd {
+  position: relative;
+  margin-top: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 1080px;
+  margin: 20px auto 0;
+  background-color: #fff;
+}
+
+.lt_nav_hd img {
+  float: left;
+  width: 120px;
+  height: 50px;
+}
+
+.lt_nav_hd .lt_tab_item {
+  float: left;
+  margin-left: 160px;
+}
+
+.lt_nav_hd .lt_tab_item a {
+  font-size: 20px;
+  color: #666;
+  padding-right: 30px;
+}
+
+.lt_nav_hd .lt_tab_item a:hover {
+  color: orange;
+}
+
+.lt_nav_hd .lt_search {
+  float: right;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+/* hover怎么作用于伪元素 */
+/* .lt_nav_hd .lt_search:hover::before {
+  color: orange;
+} */
+.lt_nav_hd .lt_search .ly_yp_search {
+  float: left;
+  position: relative;
+}
+
+.lt_nav_hd .lt_search .ly_yp_search i {
+  position: absolute;
+  font-family: "icomoon";
+  top: 2px;
+  left: 0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.lt_nav_hd .lt_search .shopping-car-icon {
+  position: relative;
+  font-family: "icomoon";
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+  padding-top: 6px;
+}
+
+.good-num {
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  /* width: 18px; */
+  padding: 0 5px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #d60000;
+  color: #fff;
+}
+
+.lt_search .shopping-car-icon .good-num:hover {
+  color: #fff;
+}
+
+.lt_search {
+  padding-right: 20px;
+}
+
+.lt_search i:hover {
+  color: orangered;
+}
+
+.lt_nav_hd .lt_search input {
+  width: 280px;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 30px;
+}
+
+.lt_nav_hd .lt_search input:focus {
+  border-bottom: 1px solid #9f8052;
+}
+
+/* //购物车部分css */
+.car-header {
+  padding: 20px 0;
+}
+
+.car-logo img {
+  vertical-align: middle;
+}
+
+.car-logo b {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.cart-filter-bar {
+  margin-top: 20px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.cart-filter-bar em {
+  float: left;
+  padding: 5px;
+  color: #333;
+}
+
+.cart-filter-bar em span {
+  color: #999;
+}
+
+.cart-thead {
+  display: flex;
+  height: 45px;
+  font-size: 14px;
+  line-height: 33px;
+  margin: 5px 0 10px;
+  padding: 5px 0;
+  background: #fafafa;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.t-checkbox,
+.p-checkbox {
+  height: 18px;
+  line-height: 18px;
+  padding-top: 7px;
+  width: 122px;
+  padding-left: 11px;
+  font-size: 14px;
+}
+
+.t-goods {
+  margin-left: 60px;
+  width: 275px;
+}
+
+.t-price {
+  width: 170px;
+  padding-left: 50px;
+}
+
+.t-num {
+  width: 150px;
+  text-align: center;
+}
+
+.t-sum {
+  width: 250px;
+  padding-left: 112px;
+}
+
+.t-action {
+  width: 30px;
+}
+
+.cart-item-list {
+  border-top: 1px solid #e7e7e7;
+}
+
+.cart-item {
+  height: 120px;
+  border-bottom: 1px solid #e7e7e7;
+  background: #fff;
+}
+
+.p-checkbox {
+  width: 50px;
+}
+
+.p-goods {
+  display: flex;
+  align-items: center;
+  width: 450px;
+}
+
+.p-img img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+.p-msg {
+  width: 220px;
+  margin: 0 10px;
+}
+
+.p-price {
+  width: 140px;
+}
+
+.quantity-form {
+  display: flex;
+  width: 130px;
+  height: 33px;
+  margin-right: 50px;
+  font-size: 20px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.decrement,
+.increment {
+  height: 100%;
+  width: 33px;
+  text-align: center;
+  color: #666;
+}
+
+.itxt {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  width: 70px;
+  height: 100%;
+  line-height: 18px;
+  text-align: center;
+  padding: 1px;
+  margin: 0;
+  margin-left: -1px;
+  font-size: 12px;
+  font-family: verdana;
+  color: #333;
+  -webkit-appearance: none;
+}
+
+.p-sum {
+  width: 200px;
+  padding-left: 60px;
+  color: #d60000;
+}
+
+.p-action a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* 结算模块 */
+
+.cart-floatbar {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background: #fafafa;
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 90px;
+}
+
+.select-all {
+  float: left;
+  height: 100%;
+  font-size: 18px;
+  color: #3d3d3d;
+  padding-left: 9px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.select-all input {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.operation {
+  float: left;
+  width: 200px;
+  margin-left: 40px;
+}
+
+.clear-all {
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+.toolbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+.amount-sum {
+  width: 500px;
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+.price-sum {
+  font-size: 22px;
+  color: #3d3d3d;
+}
+
+.total-price {
+  font-size: 14px;
+  color: #999;
+}
+
+.price-sum em {
+  color: #c00000;
+}
+
+.btn-area {
+  width: 225px;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  background: #bd4141;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-area:hover {
+  background-color: #e00000;
+}
+
+.checkall {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 18px;
+  margin-right: 10px;
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  background: #fff;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d9d9d9;
+  border-radius: 11px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713";
+  background-color: #fff;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 22px;
+  border: 1px solid #7d7d7d;
+  border-radius: 11px;
+  color: #7d7d7d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 有品秒杀商品模块 +有品新品模块公共样式*/
+.yp_skill_bd,
+.yp_new_bd,
+.yp_recom_bd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yp_skill_bd img,
+.yp_new_bd img,
+.yp_recom_bd img {
+  width: 266px;
+  height: 266px;
+}
+
+.yp_skill_bd li,
+.yp_new_bd li,
+.yp_recom_bd li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: 400px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-right: 4px;
+  background-color: #fbf6ef;
+}
+
+.yp_skill_bd li:hover,
+.yp_new_bd li:hover,
+.yp_recom_bd li:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.yp_skill_bd .add-sucess {
+  display: none;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: greenyellow;
+}
+
+.yp_skill_bd .add-car {
+  display: none;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: #8cc2e4;
+}
+
+.yp_skill_bd .add-car:hover {
+  background-color: #3f92c5
+}
+
+/* .yp_skill_bd li:last-child,
+.yp_new_bd li:last-child {
+  margin-right: 0px;
+} */
+
+.yp_skill_bd .pro_name,
+.yp_new_bd .pro_name,
+.yp_recom_bd .pro_name {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.yp_skill_bd .pro_price,
+.yp_new_bd .pro_price,
+.yp_recom_bd .pro_price {
+  margin: 0 0 40px 0;
+  font-size: 18px;
+  color: #a92112;
+}
+
+.yp_skill_bd .pro_price del,
+.yp_new_bd .pro_price del {
+  color: #666;
+  font-size: 14px;
+}
+
+.shopping_advice {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #d4ac7e;
+  margin-bottom: 10px;
+}
+
+/* 最底部footer部分 */
+.yp_footer {
+  padding-top: 50px;
+  margin-top: 50px;
+  height: 130px;
+  border-top: 1px solid #ccc;
+}
+
+.yp_footer_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yp_footer_content .yp_footer_logo {
+  width: 140px;
+  height: 50px;
+}
+
+.yp_copyright {
+  margin: 0 20px 0 150px;
+  font-size: 12px;
+}
+
+.footer_copyright_pic {
+  width: 145px;
+  height: 50px;
+}

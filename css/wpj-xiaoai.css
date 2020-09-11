@@ -1,0 +1,616 @@
+.w {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: royalblue;
+    text-decoration: none;
+}
+
+/* ul {
+    padding: 0!important;
+    margin: 0!important;
+} */
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    border-top: 1px solid #cccccc;
+    z-index: 9999;
+    background-color: #eee;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    margin-top: 15px;
+    width: 95px;
+    height: 20px;
+    background: url('../images/wpj-xiaoai/logo.png') no-repeat 0 0;
+    background-size: 95px 20px;
+}
+
+.head .w ul {
+    float: right;
+    margin-top: 15px;
+}
+
+.head .w ul li {
+    float: left;
+    font-size: 13px;
+    padding: 0px 18px;
+}
+
+.znjj, .lxwm {
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    /* background-color: pink; */
+    border-top: 1px solid #cccccc;
+    overflow: hidden;
+    display: none;
+    background-color: #eee;
+    z-index: 999;
+}
+
+.znjj ul {
+    height: 35px;
+    line-height: 35px;
+    float: right;
+    cursor: pointer;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.znjj li:hover {
+    color: royalblue;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.firstlunbo {
+    margin-top: 50px;
+    width: 100%;
+    height: 420px;
+}
+
+.firstlunbo img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 50px!important;
+    height: 90px!important;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    color: #fff!important;
+    border-radius: 10px;
+}
+
+.swiper-button-next {
+    right: 0px!important;
+}
+
+.swiper-button-prev {
+    left: 0px!important;
+}
+
+.chuangxin {
+    height: 280px;
+    background-color: #fff;
+    /* margin-bottom: 20000px; */
+    overflow: hidden;
+}
+
+.chuangxin img {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.chuangxin span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+.chuangxin ul {
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.chuangxin ul li {
+    width: 165px;
+}
+
+.erlunbo {
+    overflow: hidden;
+    background-color: #F8F9FA;
+    /* margin-bottom: 5000px; */
+    position: relative;
+}
+
+.liaotian {
+    height: 320px;
+    position: relative;
+}
+
+.liaotian img {
+    display: block;
+}
+
+.liaotian img:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    left: 360px;
+}
+
+.liaotian img:nth-child(2) {
+    position: absolute;
+    top: 180px;
+    left: 620px;
+}
+
+.liaotian p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    left: 0px;
+}
+
+.kevin {
+    overflow: hidden;
+    height: 360px;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.kevin ul {
+    position: absolute;
+    width: 510%;
+    top: 0;
+    left: 0;
+}
+
+.kevin li {
+    float: left;
+}
+
+.kevin img {
+    width: 900px;
+}
+
+.left, .right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 295px;
+    background-color: #EBEFF5;
+    font-size: 26px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left {
+    left: 230px;
+}
+
+.right {
+    right: 230px;
+}
+
+ol {
+    width: 200px;
+    margin: 35px auto 80px;
+    height: 26px;
+    overflow: hidden;
+    border-radius: 13px;
+    background-color: #EBEFF5;
+}
+
+ol li {
+    /* display: inline-block; */
+    float: left;
+    width: 50px;
+    height: 100%;
+    line-height: 26px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.color {
+    background-color: #0099FF;
+    color: #fff;
+    border-radius: 13px;
+}
+
+.one {
+    background-color: #fff;
+    overflow: hidden;
+    /* height: 1500px; */
+}
+
+.one h1 {
+    text-align: center;
+    margin-top: 95px;
+}
+
+.one img {
+    display: block;
+    width: 120px;
+    margin: 0 auto 35px;
+}
+
+.one h3 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.one p {
+    padding: 0 35px;
+    text-align: center;
+    color: #999999;
+}
+
+.one ul {
+    margin-top: 85px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.one li {
+    width: 280px;
+    margin-bottom: 75px;
+}
+
+.two {
+    overflow: hidden;
+    height: 950px;
+    background: url('../images/wpj-xiaoai/two-bg.png') no-repeat 0 0;
+    background-size: cover;
+}
+
+.two h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.two img {
+    width: 60px;
+    display: block;
+}
+
+.two span {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.two ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.two ul li {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.two a {
+    display: block;
+    width: 125px;
+    color: blue;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    font-size: 16px;
+    margin: 100px auto 0;
+}
+
+.two a img {
+    display: inline-block;
+    width: 26px;
+    margin-left: 5px;
+    position: absolute;
+    top: 1px;
+    right: 0;
+}
+
+.three {
+    position: relative;
+    height: 800px;
+    background: url('../images/wpj-xiaoai/three-bg.png') no-repeat 0 0;
+    background-size: 100vw 800px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.three h1 {
+    font-size: 42px;
+    margin-top: 300px;
+}
+
+.three p {
+    width: 320px;
+    margin-top: 25px;
+}
+
+.three a {
+    display: block;
+    margin-top: 40px;
+    color: #0099FF;
+}
+
+.three .w div {
+    cursor: pointer;
+    position: absolute;
+    top: 393px;
+    left: 953px;
+    animation: move 4s linear infinite;
+}
+
+.three .w div:hover {
+    animation: moveee 0.5s linear 1 forwards;
+}
+
+@keyframes moveee {
+    0% {}
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes move {
+    0% {}
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.four {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.four h1 {
+    font-size: 44px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.four p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.four span {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: #999999;
+}
+
+.four1 {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.four1 li {
+    width: 320px;
+    margin-bottom: 35px;
+}
+
+.four .w div img {
+    width: 100%;
+}
+
+.four a {
+    width: 150px;
+    display: block;
+    margin: 75px auto;
+    color: #0099FF;
+}
+
+.five {
+    overflow: hidden;
+    background: url('../images/wpj-xiaoai/five-bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    height: 800px;
+}
+
+.five h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    cursor: wait;
+    margin-top: 110px;
+}
+
+.five p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.five button {
+    display: block;
+    width: 180px;
+    background-color: #6AC1CC;
+    height: 40px;
+    margin: 50px auto;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.six {
+    overflow: hidden;
+    height: 600px;
+    background: url('../images/wpj-xiaoai/six-bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.six h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.six p {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 16px;
+}
+
+.six button {
+    background-color: #28005D;
+    display: block;
+    width: 300px;
+    height: 70px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 70px;
+    margin-top: 65px;
+}
+
+.pinpai {
+    overflow: hidden;
+    background-color: #fff;
+    height: 660px;
+}
+
+.pinpai h1 {
+    font-weight: bolder;
+    text-align: center;
+    margin: 90px 0;
+}
+
+.pinpai .w>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pinpai .w div div {
+    width: 190px;
+    height: 100px;
+    margin: 40px 10px;
+}
+
+.pinpai .w div img {
+    width: 100%;
+}
+.end {
+    height: 200px;
+    background-color: black;
+    color: #cccccc;
+}
+.tou {
+    width: 800px;
+    margin: 0 auto;
+    height: 100px;
+    border-bottom: 1px solid #656656;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.tou li {
+    width: 100px;
+    height: 100%;
+    line-height: 100px;
+}
+.tou li:hover {
+    color: #fff;
+}
+.tou div {
+    position: absolute;
+    top: -95px;
+    right: 0px;
+    width: 120px;
+    height: 120px;
+    display: none;
+
+}
+.tou div img {
+    width: 100%;
+}
+.wei {
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    margin-top: 35px;
+}
+.dingbu {
+    position: fixed;
+    bottom: 250px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: cyan;
+    display: none;
+}

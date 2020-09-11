@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米有品企业版</title>
+  <link rel="shortcut icon" href="youpin_favicon.ico" />
+  <!-- 引入初始化css和自己写的css -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/youpin.css">
+  <!-- 引入jQuery的js -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- 引入Swiper css文件 -->
+  <link rel="stylesheet" href="../css/swiper-bundle.css">
+  <!-- 引入swiper JS文件 -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- 引入自己写的JS -->
+  <script src="../js/youpin.js"></script>
+</head>
+
+<body class="lt_body">
+  <!-- 顶部header部分制作 -->
+  <header class="lt_hd">
+    <div class="lt_w">
+      <ul>
+        <li>
+          <a href="javascript:;" class="yp_login">登录</a>
+          <a href="javascript:;" class="yp_reg">注册</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="javascript:;">帮助中心</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="javascript:;">下载 APP</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="javascript:;">直播</a>
+        </li>
+        <li>|</li>
+        <li class="protocol">
+          <a href="javascript:;">资质证照/协议规则</a>
+          <ul class="protocol_list">
+            <li><a href="javascript:;">资质证照</a></li>
+            <li><a href="javascript:;">协议规则</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </header>
+  <!-- nav 导航栏 banner部分制作 -->
+  <nav class="lt_w">
+    <!-- 导航栏头部 lt_nav_hd部分-->
+    <div class="yp_nav_fixed">
+      <div class="lt_nav_hd">
+        <div class="youpin_logo">
+          <img src="../images/youpin/youpinlogo.png" alt="">
+        </div>
+        <div class="lt_tab_item">
+          <a href="javascript:;">限时抢购</a>
+          <a href="javascript:;">企业采购</a>
+        </div>
+        <div class="lt_search">
+          <div class="ly_yp_search">
+            <i class="yp_search_btn"></i>
+            <input type="search" placeholder="搜一搜">
+          </div>
+          <a class="shopping-car" href="ypShoppingCar.html"></a>
+        </div>
+      </div>
+    </div>
+    <div class="lt_nav_bd">
+      <!-- 焦点图左侧导航栏tablist -->
+      <div class="sort">
+        分类
+      </div>
+      <ul class="lt_side_nav">
+        <li class="yp_tab_list">
+          <a href="javascript:;">有品推荐</a>
+          <span>/</span>
+          <a href="javascript:;">家用电器</a>
+          <div class="yp_tab_item">
+            <h3>有品推荐</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">为你推荐</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">空调</a>
+                <a href="javascript:;" class="yp_item_hot_color">智能手表</a>
+                <a href="javascript:;">耳机</a>
+                <a href="javascript:;">电视机</a>
+                <a href="javascript:;">行李箱</a>
+                <a href="javascript:;"> 灯具</a>
+              </span>
+
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">精选专区</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">回购榜单</a>
+                <a href="javascript:;">吃喝到家</a>
+                <a href="javascript:;" class="yp_item_hot_color">装修好物</a>
+                <a href="javascript:;">夏日解暑</a>
+                <a href="javascript:;">亲子时光</a>
+                <a href="javascript:;"> 运动健身</a>
+              </span>
+            </div>
+            <h3>家用电器</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">频道精选</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">热卖爆款</a>
+                <a href="javascript:;" class="yp_item_hot_color">厨电新品</a>
+                <a href="javascript:;">清凉家电</a>
+                <a href="javascript:;">新品上市</a>
+                <a href="javascript:;">米粉最爱</a>
+                <a href="javascript:;"> 灯具</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">电视</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">小米电视5</a>
+                <a href="javascript:;" class="yp_item_hot_color">Redmi电视</a>
+                <a href="javascript:;"> 全面屏</a>
+                <a href="javascript:;">32-40英寸</a>
+                <a href="javascript:;"> 43英寸</a>
+                <a href="javascript:;">50英寸</a>
+                <a href="javascript:;">65英寸</a>
+                <a href="javascript:;">激光电视</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">冰箱</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">两门冰箱</a>
+                <a href="javascript:;" class="yp_item_hot_color">三门冰箱</a>
+                <a href="javascript:;">对开门冰箱</a>
+                <a href="javascript:;">十字四门冰箱</a>
+                <a href="javascript:;"> 多门冰箱</a>
+                <a href="javascript:;">小冰箱</a>
+                <a href="javascript:;"> 冷柜/酒柜</a>
+                <a href="javascript:;" class="yp_item_hot_color">米家冰箱</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">洗衣机</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">洗烘一体机</a>
+                <a href="javascript:;">滚筒洗衣机</a>
+                <a href="javascript:;">波轮洗衣机</a>
+                <a href="javascript:;">迷你洗衣机</a>
+                <a href="javascript:;">烘干机</a>
+                <a href="javascript:;">冰洗套装</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">空调</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">壁挂空调</a>
+                <a href="javascript:;">柜式空调</a>
+                <a href="javascript:;">一级能效</a>
+                <a href="javascript:;">三级能效</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">生活电器</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">扫地机器人</a>
+                <a href="javascript:;">吸尘器</a>
+                <a href="javascript:;">电风扇</a>
+                <a href="javascript:;">空气净化器</a>
+                <a href="javascript:;">加湿器</a>
+                <a href="javascript:;">取暖器</a>
+                <a href="javascript:;">蒸汽清洁机</a>
+                <a href="javascript:;">电动清洁机</a>
+                <a href="javascript:;">除螨仪</a>
+                <a href="javascript:;">擦窗机器人</a>
+                <a href="javascript:;">擦地机器人</a>
+                <a href="javascript:;">挂烫机/熨斗</a>
+                <a href="javascript:;">烘干/消毒机</a>
+                <a href="javascript:;">配件耗材</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">厨房小电</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">热销单品</a>
+                <a href="javascript:;">本周新品</a>
+                <a href="javascript:;">即热饮水机</a>
+                <a href="javascript:;">破壁机</a>
+                <a href="javascript:;">电水壶</a>
+                <a href="javascript:;">原汁机</a>
+                <a href="javascript:;">多功能锅</a>
+                <a href="javascript:;">电烤箱</a>
+                <a href="javascript:;">空气炸锅</a>
+                <a href="javascript:;">微波炉</a>
+                <a href="javascript:;">电饭煲/压力锅</a>
+                <a href="javascript:;">茶饮</a>
+                <a href="javascript:;">电磁炉</a>
+                <a href="javascript:;">咖啡机</a>
+                <a href="javascript:;">养生壶</a>
+                <a href="javascript:;">创意厨电</a>
+                <a href="javascript:;">多士炉</a>
+                <a href="javascript:;">三明治机</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">居家餐厨</a>
+          <span>/</span>
+          <a href="javascript:;">电视影音</a>
+          <div class="yp_tab_item">
+            <h3>居家餐厨</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">爆款热卖</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">七夕花礼</a>
+                <a href="javascript:;" class="yp_item_hot_color">餐厨爆款</a>
+                <a href="javascript:;" class="yp_item_hot_color">居家家纺</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">家纺</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">被子</a>
+                <a href="javascript:;">床品件套</a>
+                <a href="javascript:;">枕头</a>
+                <a href="javascript:;">毛巾浴巾</a>
+                <a href="javascript:;">地毯</a>
+                <a href="javascript:;">居家布艺</a>
+                <a href="javascript:;">窗帘</a>
+                <a href="javascript:;">床单/床笠/床褥</a>
+                <a href="javascript:;">居家办公小物</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">家饰</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">居家收纳</a>
+                <a href="javascript:;">家饰摆件</a>
+                <a href="javascript:;">鲜花绿植</a>
+                <a href="javascript:;">装饰画</a>
+                <a href="javascript:;">永生花</a>
+                <a href="javascript:;">挂钟/闹钟</a>
+                <a href="javascript:;">香薰</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">锅</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">炒锅</a>
+                <a href="javascript:;">平底锅</a>
+                <a href="javascript:;">汤锅</a>
+                <a href="javascript:;">砂锅</a>
+                <a href="javascript:;">奶锅</a>
+                <a href="javascript:;" class="yp_item_hot_color">火锅</a>
+                <a href="javascript:;">锅具套装</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">水杯</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">搅拌杯</a>
+                <a href="javascript:;">保温壶</a>
+                <a href="javascript:;">马克杯</a>
+                <a href="javascript:;">玻璃杯</a>
+                <a href="javascript:;">杯具套装</a>
+                <a href="javascript:;" class="yp_item_hot_color">运动怀壶</a>
+                <a href="javascript:;">焖烧杯</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">厨房配件</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">保鲜收纳</a>
+                <a href="javascript:;">厨房置物架</a>
+                <a href="javascript:;">调料器皿</a>
+                <a href="javascript:;">铲勺</a>
+                <a href="javascript:;">功能厨具</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">家具家装</a>
+          <span>/</span>
+          <a href="javascript:;">智能家庭</a>
+          <div class="yp_tab_item">
+            <h3>家具家装</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">爆款推荐</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">爆款家具</a>
+                <a href="javascript:;" class="yp_item_hot_color">推荐卫浴</a>
+                <a href="javascript:;" class="yp_item_hot_color">TOP榜单</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">厨房卫浴</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">爆款主推</a>
+                <a href="javascript:;">淋雨花洒</a>
+                <a href="javascript:;">浴霸吊顶</a>
+                <a href="javascript:;">马桶</a>
+                <a href="javascript:;" class="yp_item_hot_color">智能马桶</a>
+                <a href="javascript:;">厨卫龙头</a>
+                <a href="javascript:;">浴缸</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">家装建材</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">晾晒专区</a>
+                <a href="javascript:;" class="yp_item_hot_color">窗帘电机</a>
+                <a href="javascript:;">门窗地板吊顶</a>
+                <a href="javascript:;" class="yp_item_hot_color">全屋定制</a>
+                <a href="javascript:;" class="yp_item_hot_color">开关插座</a>
+                <a href="javascript:;">安装服务</a>
+              </span>
+            </div>
+            <h3>智能家庭</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">专属定制</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">热销爆品</a>
+                <a href="javascript:;" class="yp_item_hot_color">人品专区</a>
+                <a href="javascript:;" class="yp_item_hot_color">MIoT专区</a>
+                <a href="javascript:;" class="yp_item_hot_color">小爱同学</a>
+                <a href="javascript:;" class="yp_item_hot_color">新品手环</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">智能门锁</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">热销爆款</a>
+                <a href="javascript:;">执手款</a>
+                <a href="javascript:;">推拉款</a>
+                <a href="javascript:;">其它锁类</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">智能家居</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">空调伴侣</a>
+                <a href="javascript:;" class="yp_item_hot_color">摄像机</a>
+                <a href="javascript:;">网关</a>
+                <a href="javascript:;" class="yp_item_hot_color">检测仪</a>
+                <a href="javascript:;" class="yp_item_hot_color">智能猫眼</a>
+                <a href="javascript:;">远程遥控</a>
+              </span>
+            </div>
+
+
+
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">手机电脑</a>
+          <span>/</span>
+          <a href="javascript:;">数码周边</a>
+          <div class="yp_tab_item">
+            <h3>手机电脑</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">手机</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">小米系列</a>
+                <a href="javascript:;" class="yp_item_hot_color">新品热卖</a>
+                <a href="javascript:;">Redmi系列</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">笔记本...</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">轻薄本</a>
+                <a href="javascript:;">游戏本</a>
+                <a href="javascript:;">小米Air系列</a>
+                <a href="javascript:;">马桶</a>
+                <a href="javascript:;" class="yp_item_hot_color">智能马桶</a>
+                <a href="javascript:;">厨卫龙头</a>
+                <a href="javascript:;">浴缸</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">家装建材</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">晾晒专区</a>
+                <a href="javascript:;" class="yp_item_hot_color">窗帘电机</a>
+                <a href="javascript:;">门窗地板吊顶</a>
+                <a href="javascript:;" class="yp_item_hot_color">全屋定制</a>
+                <a href="javascript:;" class="yp_item_hot_color">开关插座</a>
+                <a href="javascript:;">安装服务</a>
+              </span>
+            </div>
+            <h3>数码周边</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">电脑外设</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">固态硬盘</a>
+                <a href="javascript:;">电脑支架</a>
+                <a href="javascript:;">充电器</a>
+                <a href="javascript:;">鼠标</a>
+                <a href="javascript:;">机械键盘</a>
+                <a href="javascript:;">扩展坞</a>
+                <a href="javascript:;">网盘/NAS</a>
+                <a href="javascript:;">U盘</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">办公设备</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">打印机</a>
+                <a href="javascript:;">显示器</a>
+                <a href="javascript:;" class="yp_item_hot_color">扫描仪</a>
+                <a href="javascript:;">网线</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">日用文创</a>
+          <span>/</span>
+          <a href="javascript:;">服装配饰</a>
+          <div class="yp_tab_item">
+            <h3>日用文创</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">为你推荐</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">杀菌消毒</a>
+                <a href="javascript:;" class="yp_item_hot_color">新品推荐</a>
+                <a href="javascript:;" class="yp_item_hot_color">热卖爆品</a>
+                <a href="javascript:;" class="yp_item_hot_color">促销活动</a>
+                <a href="javascript:;" class="yp_item_hot_color">清洁用具</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">日化洗涤</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">衣物护理</a>
+                <a href="javascript:;">厨房清洁</a>
+                <a href="javascript:;">卫浴清洁</a>
+                <a href="javascript:;">家电清洁</a>
+                <a href="javascript:;">除味/消毒</a>
+              </span>
+            </div>
+            <h3>服装配饰</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">男士上衣</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">T恤/POLO</a>
+                <a href="javascript:;">商务衬衫</a>
+                <a href="javascript:;">休闲衬衫</a>
+                <a href="javascript:;">卫衣</a>
+                <a href="javascript:;">夹克/风衣</a>
+                <a href="javascript:;">西服西裤</a>
+                <a href="javascript:;">男士裤装</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">女装</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">T恤/卫衣</a>
+                <a href="javascript:;">毛衫/针织衫</a>
+                <a href="javascript:;">衬衫</a>
+                <a href="javascript:;">西服/夹克</a>
+                <a href="javascript:;">连衣裙</a>
+                <a href="javascript:;">半身裙</a>
+                <a href="javascript:;">裤装</a>
+                <a href="javascript:;">风衣/大衣</a>
+                <a href="javascript:;">棉服/羽绒服</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">鞋靴箱包</a>
+          <span>/</span>
+          <a href="javascript:;">美妆个护</a>
+          <div class="yp_tab_item">
+            <h3>鞋靴箱包</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">男鞋</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">正装鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">商务休闲鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">休闲鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">帆布鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">男士板鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">凉鞋/拖鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">皮鞋</a>
+                <a href="javascript:;" class="yp_item_hot_color">男靴</a>
+                <a href="javascript:;" class="yp_item_hot_color">鞋配</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">女鞋</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">凉鞋/拖鞋</a>
+                <a href="javascript:;">中低跟单鞋</a>
+                <a href="javascript:;">高跟鞋</a>
+                <a href="javascript:;">休闲鞋</a>
+                <a href="javascript:;">女靴</a>
+                <a href="javascript:;">鞋配</a>
+              </span>
+            </div>
+            <h3>美妆个护</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">个护工具</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">热卖爆品</a>
+                <a href="javascript:;">新品推荐</a>
+                <a href="javascript:;">剃须刀</a>
+                <a href="javascript:;">电吹风</a>
+                <a href="javascript:;">理发器</a>
+                <a href="javascript:;">鼻毛修剪器</a>
+                <a href="javascript:;">洗手机</a>
+                <a href="javascript:;">智能掏耳勺</a>
+                <a href="javascript:;">其它护理电器</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">美妆工具</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">生发帽</a>
+                <a href="javascript:;">洁面仪</a>
+                <a href="javascript:;">美容仪</a>
+                <a href="javascript:;">美发工具</a>
+                <a href="javascript:;">美妆镜</a>
+                <a href="javascript:;">化妆工具</a>
+                <a href="javascript:;">其他工具</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">运动户外</a>
+          <span>/</span>
+          <a href="javascript:;">出行车品</a>
+          <div class="yp_tab_item">
+
+            <h3>运动户外</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">健身训练</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">跑步机/走步机</a>
+                <a href="javascript:;" class="yp_item_hot_color">划船机</a>
+                <a href="javascript:;" class="yp_item_hot_color">动感单车</a>
+                <a href="javascript:;" class="yp_item_hot_color">椭圆机</a>
+                <a href="javascript:;" class="yp_item_hot_color">家用小器械</a>
+                <a href="javascript:;" class="yp_item_hot_color">美体瑜伽</a>
+                <a href="javascript:;" class="yp_item_hot_color">运动防护/修复</a>
+                <a href="javascript:;">运动生活</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">运动服饰</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">健身衣</a>
+                <a href="javascript:;">运动裤</a>
+                <a href="javascript:;">瑜伽服饰</a>
+                <a href="javascript:;">跑步鞋</a>
+                <a href="javascript:;">运动户外包</a>
+              </span>
+            </div>
+            <h3>出行车品</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">车载电器</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">行车记录仪</a>
+                <a href="javascript:;">车载净化器</a>
+                <a href="javascript:;">车载冰箱</a>
+                <a href="javascript:;">倒车雷达</a>
+                <a href="javascript:;">车载加湿器</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">骑行</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">T电动摩托车</a>
+                <a href="javascript:;">平衡车</a>
+                <a href="javascript:;">滑板鞋</a>
+                <a href="javascript:;">折叠自行车</a>
+                <a href="javascript:;">山地自行车</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">日用文创</a>
+          <span>/</span>
+          <a href="javascript:;">服装配饰</a>
+          <div class="yp_tab_item">
+            <h3>日用文创</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">为你推荐</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">杀菌消毒</a>
+                <a href="javascript:;" class="yp_item_hot_color">新品推荐</a>
+                <a href="javascript:;" class="yp_item_hot_color">热卖爆品</a>
+                <a href="javascript:;" class="yp_item_hot_color">促销活动</a>
+                <a href="javascript:;" class="yp_item_hot_color">清洁用具</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">日化洗涤</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">衣物护理</a>
+                <a href="javascript:;">厨房清洁</a>
+                <a href="javascript:;">卫浴清洁</a>
+                <a href="javascript:;">家电清洁</a>
+                <a href="javascript:;">除味/消毒</a>
+              </span>
+            </div>
+            <h3>服装配饰</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">男士上衣</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">T恤/POLO</a>
+                <a href="javascript:;">商务衬衫</a>
+                <a href="javascript:;">休闲衬衫</a>
+                <a href="javascript:;">卫衣</a>
+                <a href="javascript:;">夹克/风衣</a>
+                <a href="javascript:;">西服西裤</a>
+                <a href="javascript:;">男士裤装</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">女装</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">T恤/卫衣</a>
+                <a href="javascript:;">毛衫/针织衫</a>
+                <a href="javascript:;">衬衫</a>
+                <a href="javascript:;">西服/夹克</a>
+                <a href="javascript:;">连衣裙</a>
+                <a href="javascript:;">半身裙</a>
+                <a href="javascript:;">裤装</a>
+                <a href="javascript:;">风衣/大衣</a>
+                <a href="javascript:;">棉服/羽绒服</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">母婴亲子</a>
+          <span>/</span>
+          <a href="javascript:;">宠物生活</a>
+          <div class="yp_tab_item">
+            <h3>母婴亲子</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">玩具</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">益智玩具</a>
+                <a href="javascript:;">积木模型</a>
+                <a href="javascript:;">遥控电动</a>
+                <a href="javascript:;">娃娃玩具</a>
+                <a href="javascript:;">绘画DIY</a>
+              </span>
+            </div>
+            <h3>宠物生活</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">宠物智能</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">宠物饮水机</a>
+                <a href="javascript:;">喂食器</a>
+                <a href="javascript:;" class="yp_item_hot_color">智能除臭</a>
+                <a href="javascript:;">宠物小家电</a>
+                <a href="javascript:;" class="yp_item_hot_color">智能猫砂盆</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">水族用品</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;" class="yp_item_hot_color">鱼缸</a>
+                <a href="javascript:;">水族配件</a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="yp_tab_list">
+          <a href="javascript:;">有品海购</a>
+          <span>/</span>
+          <a href="javascript:;">DLAB</a>
+          <div class="yp_tab_item">
+            <h3>有品海购</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">海购精选</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">海购秒杀</a>
+                <a href="javascript:;" class="yp_item_hot_color">今日推荐</a>
+                <a href="javascript:;" class="yp_item_hot_color">海购热销</a>
+                <a href="javascript:;" class="yp_item_hot_color">全球直邮</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">健康饮食</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">增强免疫</a>
+                <a href="javascript:;">骨骼健康</a>
+                <a href="javascript:;">睡眠保健</a>
+                <a href="javascript:;">备孕营养</a>
+                <a href="javascript:;">明目益智</a>
+              </span>
+            </div>
+            <h3>DLAB</h3>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">居家美物</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">餐具</a>
+                <a href="javascript:;">手冲咖啡套装</a>
+                <a href="javascript:;">艺术水壶</a>
+                <a href="javascript:;">居家摆件</a>
+                <a href="javascript:;">香氛</a>
+              </span>
+            </div>
+            <div class="yp_item_row">
+              <span class="yp_item_row_hd">饰品手表</span>
+              <span class="yp_item_row_bd">
+                <a href="javascript:;">项链/戒指</a>
+                <a href="javascript:;">手表</a>
+                <a href="javascript:;">耳机</a>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- //焦点图banner轮播图部分 -->
+      <div class="yp_banner">
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/youpin/yp_banner1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/youpin/yp_banner2.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/youpin/yp_banner3.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/youpin/yp_banner4.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/youpin/yp_banner5.jpeg" alt="">
+            </div>
+
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 焦点图图下方导航栏部分 -->
+    <div class="lt_footer_nav ">
+      <ul>
+        <li>
+          <a href="javascript:;">
+            <img src="../images/youpin/yp_navfooter1.png" alt="">
+            <span>每日新品</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="../images/youpin/yp_navfooter2.png" alt="">
+            <span>小米众筹</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="../images/youpin/yp_navfooter3.png" alt="">
+            <span>有品秒杀</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="../images/youpin/yp_navfooter4.png" alt="">
+            <span>热销榜单</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="../images/youpin/yp_navfooter5.png" alt="">
+            <span>小米自营</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="lt_w">
+    <!-- 有品众筹模块 -->
+    <div class="yp_raise">
+      <div class="yp_raise_hd clearfix">
+        <h2>小米有品众筹<span>永远好奇 永远年轻</span></h2>
+        <a href="javascript:;">更多</a>
+      </div>
+      <div class="yp_raise_bd">
+        <ul>
+          <li class="yp_raise_pro1">
+            <p title="小米十周年金章">小米十周年金章</p>
+            <p title="小米十年，一往无前，足金纪念">小米十年，一往无前，足金纪念，...</p>
+            <p>￥1482<span>起</span></p>
+            <img src="../images/youpin/yp_zc1.png" alt="">
+          </li>
+          <li class="yp_raise_pro2">
+            <p title="手持打印机">手持打印机</p>
+            <p>￥299<span>起</span></p>
+            <img src="../images/youpin/yp_zc2.png" alt="">
+          </li>
+          <li class="yp_raise_pro3">
+            <p title="电动螺丝刀">电动螺丝刀</p>
+            <p>￥299<span>起</span></p>
+            <img src="../images/youpin/yp_zc3.png" alt="">
+          </li>
+          <li class="yp_date_view1"></li>
+          <li class="yp_date_view2"></li>
+          <li class="yp_date_view3"></li>
+          <li class="yp_raise_date1">
+            <div class="date"><span>2179</span>人支持<span class="hot">爆</span></div>
+            <div class="date_per"><span>573</span><span class="per">%</span></div>
+          </li>
+          <li class="yp_raise_date2">
+            <div class="date"><span>3232</span>人支持<span class="hot">热</span></div>
+            <div class="date_per"><span>161</span><span class="per">%</span></div>
+          </li>
+          <li class="yp_raise_date3">
+            <div class="date"><span>19426</span>人支持<span class="hot">火</span></div>
+            <div class="date_per"><span>368</span><span class="per">%</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 有品秒杀模块 -->
+    <div class="yp_skill">
+      <!-- 有品秒杀头部 -->
+      <div class="yp_skill_hd clearfix">
+        <h2>
+          有品秒杀<img src="../images/youpin/yp_skill_clock.png" alt=""><span> 10月1号场</span>
+        </h2>
+        <div class="countDown">
+          <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+        </div>
+        <a href="javascript:;">更多</a>
+      </div>
+      <!-- 有品秒杀商品模块  -->
+      <ul class="yp_skill_bd">
+        <li>
+          <img src="../images/youpin/yp_skill1.jpg" alt="">
+          <p class="pro_name">怡泰桂花酸梅汤</p>
+          <p class="pro_price">&yen;26 <del>&yen;69</del></p>
+        </li>
+        <li>
+          <img src="../images/youpin/yp_skill2.jpg" alt="">
+          <p class="pro_name">云米烘洗一体机</p>
+          <p class="pro_price">&yen;1998 <del>&yen;2999</del></p>
+        </li>
+        <li>
+          <img src="../images/youpin/yp_skill3.jpg" alt="">
+          <p class="pro_name">小闲洗衣凝珠</p>
+          <p class="pro_price">&yen;39.9 <del>&yen;79</del></p>
+        </li>
+        <li>
+          <img src="../images/youpin/yp_skill4.jpg" alt="">
+          <p class="pro_name">70迈智能后视镜</p>
+          <p class="pro_price">&yen;649.9 <del>&yen;1299</del></p>
+        </li>
+      </ul>
+    </div>
+    <!-- 有品新品模块 -->
+    <div class="yp_new">
+      <!-- 新品头部 -->
+      <div class="yp_new_hd clearfix">
+        <h2>每日新品<span>永远好奇 永远年轻</span></h2>
+        <a href="javascript:;">更多</a>
+      </div>
+      <!-- 新品商品模块 -->
+      <ul class="yp_new_bd">
+        <li>
+          <img src="../images/youpin/yp_new1.jpg" alt="">
+          <p class="pro_name">除甲醛懒人沙发</p>
+          <p class="intro">83.8%除环境甲醛，高弹EPP颗粒...</p>
+          <p class="pro_price">&yen;649</p>
+        </li>
+        <li>
+          <img src="../images/youpin/yp_new2.jpg" alt="">
+          <p class="pro_name">经典GIA三石钻戒</p>
+          <p class="intro">源于皇室 个性三钻 权威双证...</p>
+          <p class="pro_price">&yen;7800<span>起</span></p>
+        </li>
+        <li>
+          <img src="../images/youpin/yp_new3.jpg" alt="">
+          <p class="pro_name">周大福翡翠吊坠</p>
+          <p class="intro">高级A货，天然翡翠，温润清透...</p>
+          <p class="pro_price">&yen;741起</p>
+        </li>
+        <li>
+          <img src="../images/youpin/yp_new4.jpg" alt="">
+          <p class="pro_name">七夕节玫瑰花礼</p>
+          <p class="intro">甄选11支优质玫瑰，两色系可选...</p>
+          <p class="pro_price">&yen;649.9 <del>&yen;1299</del></p>
+        </li>
+      </ul>
+    </div>
+    <!-- 专属推荐模块 -->
+    <div class="yp_recom">
+      <h2 class="yp_recom_hd">专属推荐</h2>
+      <ul class="yp_recom_bd">
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom1.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom2.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom3.webp" alt="">
+            <p>高清高倍，轻巧便携，手机拍摄</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">星特朗SCTW-70天文望远镜...</p>
+            <p class="pro_price">&yen;409</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom4.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom5.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom6.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom7.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom8.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom9.webp" alt="">
+            <p>为跑步而生，快速定位/监测心...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">宜准智能专业跑步表 运...</p>
+            <p class="pro_price">&yen;899</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom10.webp" alt="">
+            <p>9种运动模式，14天持久续航，全...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">Haylou智能手表LS01</p>
+            <p class="pro_price">&yen;119</p>
+          </div>
+        </li>
+        <li>
+          <div class="pic">
+            <img src="../images/youpin/yp_recom11.webp" alt="">
+            <p>除菌洗，45min快速烘洗，24种智能...</p>
+          </div>
+          <div class="infomation">
+            <p class="pro_name">云米互联网一体机...</p>
+            <p class="pro_price">&yen;1899</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 底部版权模块 -->
+  <footer class="yp_footer">
+    <div class="yp_footer_content lt_w ">
+      <img src="../images/youpin/footer_logo.png" alt="" class="yp_footer_logo">
+      <div class="yp_copyright">
+        <p>©xiaomiyoupin.com 苏B2-20180351 苏ICP备18025642号-1 logo苏公网安备 32010502010244号</p>
+        <p>企业名称：有品信息科技有限公司 关于我们 入驻有品 知识产权侵权投诉</p>
+        <p>小米有品平台运营主体变更公告</p>
+        <p>南京市建邺区白龙江东街8号3栋9层</p>
+      </div>
+      <img src="../images/youpin/yp_footer.copyright.png" alt="" class=" footer_copyright_pic">
+    </div>
+  </footer>
+
+  <!-- 右侧固定导航栏模块 -->
+  <div class="yp_fixed_bar">
+    <ul>
+      <li class="yp_fixed_bar_item1">
+        <a href="javascript:;">
+          <i></i>
+          <p>联系客服</p>
+        </a>
+        <div class="yp_fixed_inner1">
+          <p class="yp_info1">小米有品平台问题，建议反馈，商户和物流问题投诉等请拨打小米有品客服热线</p>
+          <p class="yp_info2">400-100-1199</p>
+          <p class="yp_info3">(周一至周日 8：00-18：00)</p>
+          <p class="yp_info4"> 小米/米家自营品牌，手机电视智能硬件商品或订单发货/退款售后问题 请拨打小米自营客服热线</p>
+          <p class="yp_info5"> 400-100-5678</p>
+          <p class="yp_info6">(周一至周日 8：00-18：00)</p>
+        </div>
+      </li>
+      <li class="yp_fixed_bar_item2">
+        <a href="javascript:;">
+          <i></i>
+          <p>下载 <br>APP</p>
+        </a>
+        <div class="yp_fixed_inner1">
+          <i><img src="../images/youpin/yp_fixed1.png" alt="" class="erweima"></i>
+          <p>下载小米有品APP</p>
+          <p>得新人礼包</p>
+        </div>
+      </li>
+      <li class="yp_fixed_bar_item3">
+        <a href="javascript:;">
+          <i></i>
+          <p>新人有礼</p>
+        </a>
+        <div class="yp_fixed_inner1">
+          <img src="../images/youpin/yp_fixed2.png" alt="" class="newpre">
+          <i><img src="../images/youpin/yp_fixed1.png" alt="" class="erweima"></i>
+          <p>下载小米有品APP得新人礼包</p>
+        </div>
+      </li>
+      <li class="yp_fixed_bar_item4">
+        <a href="javascript:;">
+          <i></i>
+          <p>关注微信</p>
+        </a>
+        <div class="yp_fixed_inner1">
+          <i><img src="../images/youpin/yp_fixed1.png" alt="" class="erweima"></i>
+          <p>下载小米有品APP得新人礼包</p>
+        </div>
+      </li>
+      <li class="yp_fixed_bar_item5 goTop">
+        <a href="javascript:;">
+          <i></i>
+          <p>回到顶部</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 登录弹出框部分 -->
+  <div class="yp_alert_mask">
+    <div class="yp_login_alert">
+      <h3>声明与政策</h3>
+      <p>欢迎您来到小米有品！</p>
+      <p>我们依据最新法律法规要求，制定并更新了<span>《隐私政策》、《小米有品用户协议》</span>以及<span>《小米账号使用协议》</span> 。
+        您需阅读并同意相关政策条款方可进行登录。</p>
+      <div class="agree_box">
+        <button class="agree agree_active">同意并继续</button>
+        <button class="disagree">不同意</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
